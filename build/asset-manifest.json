@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4fa03362.css",
+    "main.js": "/static/js/main.5da9a730.js",
+    "static/media/OpenSans-VariableFont_wdth,wght.ttf": "/static/media/OpenSans-VariableFont_wdth,wght.ceb05254cedfa895b512.ttf",
+    "static/media/bayernlb.jpeg": "/static/media/bayernlb.40ab0b880578f1523b84.jpeg",
+    "static/media/gerald.png": "/static/media/gerald.a94f2b6298e95a228ee4.png",
+    "static/media/nys.png": "/static/media/nys.f1ea0b37c47a7dc8ec19.png",
+    "static/media/sculptor.png": "/static/media/sculptor.b78054c0536d89d39368.png",
+    "index.html": "/index.html",
+    "main.4fa03362.css.map": "/static/css/main.4fa03362.css.map",
+    "main.5da9a730.js.map": "/static/js/main.5da9a730.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4fa03362.css",
+    "static/js/main.5da9a730.js"
+  ]
+}
