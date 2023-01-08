@@ -13,7 +13,7 @@ html, body{
 body {
     background-color: #683B2B;
     font-family: Open-Sans, Arial, Helvetica;
-    overflow: auto;
+    overflow: hidden;
 }
 
 /*----------Start of Nav----------*/
@@ -23,7 +23,7 @@ body {
 }
 .nav-flex-container {
     display: flex;
-    flex-grow: 1;
+    /* flex-grow: 1; */
     flex-direction: row;
     flex-wrap: nowrap;
     background-color: #683B2B;
@@ -97,24 +97,29 @@ body {
     display: flex;
     flex-direction: row;
     width:100%;
-    /* height: 70vh; */
+    height: 75vh;
     background-color: #DED1BD;
 }
 
 .photo-flex{
-    width:40%;
+    width:60%;
     height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 .photo-selfie{
-    width: 80%;
-    height: 90%;
+    width:  95%;
+    max-width: 600px;
+    max-height: 900px;
+    min-width: 500px;
+    height: 70%;
+    
 }
 .greeting-flex{
-    width: 60%;
+    width: 40%;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -123,16 +128,15 @@ body {
     animation-duration: 1.5s;
     animation-delay: 0s;
     animation-timing-function: linear;
-
-}
-.greeting-flex{
+    margin-right: 4rem;
     text-align: center;
+    overflow: hidden;
 }
 .greeting-flex h1{
-    font-size: 3vw;
+    font-size: 3rem;
 }
 .greeting-flex h2{
-    font-size: 1.5vw;
+    font-size: 2rem;
 }
 
 /*------------------------------------------------------------------*/
@@ -140,30 +144,32 @@ body {
 .second-sectional{
     display: flex;
     width: 100%;
-    min-height: fit-content;
+    /* min-height: fit-content; */
     flex-direction: column;
     align-items: center;
     background-color: #D49E8D;
+    height: 80vh;
+    justify-content: center;
 }
 .second-sectional h2{
-    font-size: 1.5vw;
+    font-size: 2rem;
     padding-bottom: 1%;
 }
 .collective-passions-flex-container{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    justify-content: center;
     align-items: center;
     width: 90%;
-    height: 90%;
+    height: 70%;
     padding-bottom: 2%;
 
 }
 .passion-box-layout{
     /* This is the anchor */
     display: flex;
-    width: 22%;
+    width: 25%;
     height: 80%;
     flex-direction: column;
     align-items: center;
@@ -174,13 +180,15 @@ body {
 
 .passion-image{
     max-width:90%;
+    /* min-width: 90%; */
     max-height: 85%;
-    min-width: 90%;
-    min-height: 85%;
-    border-radius: .5rem;
+    min-height: 75%;
+    min-width: 85%;
+    border-radius: .75rem;
+    object-fit: fill;
 }
 .passion-label{
-    font-size: 1vw;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -389,5 +397,29 @@ body {
     }
     .overlay-content a:hover {
         color: #683B2B;
+    }
+    /* Makes passions mobile friendly */
+    .collective-passions-flex-container{
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 70%;
+        padding-bottom: 2%;
+    
+    }
+    .passion-box-layout{
+        display: flex;
+        width: 75%;
+        /* min-width: 65%; */
+        height: 25%;
+        object-fit: stretch;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: black;
     }
 }
