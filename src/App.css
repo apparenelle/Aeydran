@@ -23,6 +23,11 @@ body {
 }
 .nav-flex-container {
     display: flex;
+<<<<<<< Updated upstream
+=======
+    min-height: 75px;
+
+>>>>>>> Stashed changes
     /* flex-grow: 1; */
     flex-direction: row;
     flex-wrap: nowrap;
@@ -97,8 +102,13 @@ body {
     display: flex;
     flex-direction: row;
     width:100%;
+<<<<<<< Updated upstream
     height: 75vh;
+=======
+    min-height: 600px;
+>>>>>>> Stashed changes
     background-color: #DED1BD;
+    align-items: center;
 }
 
 .photo-flex{
@@ -144,11 +154,18 @@ body {
 .second-sectional{
     display: flex;
     width: 100%;
+<<<<<<< Updated upstream
     /* min-height: fit-content; */
     flex-direction: column;
     align-items: center;
     background-color: #D49E8D;
     height: 80vh;
+=======
+    min-height: 500px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #D49E8D;
+>>>>>>> Stashed changes
     justify-content: center;
 }
 .second-sectional h2{
@@ -244,7 +261,7 @@ body {
 .fourth-sectional{
     display: flex;
     width: 100%;
-    height: 35vw;
+    height: 1500px;
     min-height: fit-content;
     background-color: #693B2B;
     flex-direction: column;
@@ -398,6 +415,7 @@ body {
     .overlay-content a:hover {
         color: #683B2B;
     }
+<<<<<<< Updated upstream
     /* Makes passions mobile friendly */
     .collective-passions-flex-container{
         display: flex;
@@ -421,5 +439,38 @@ body {
         justify-content: center;
         text-decoration: none;
         color: black;
+=======
+    /* Second --- Passions Container */
+    .collective-passions-flex-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        height: 90%;
+        padding-bottom: 2%;
+    
+    }
+    /* Third -- Projects Container */
+    .collective-projects-flex-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        height: 90%;
+        padding-bottom: 2%;
+    }
+    /* Fourth -- Experiences */
+    .box-layout-flex-row-container{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        height: 70%;
+        align-items: center;
+        justify-content: center;
+>>>>>>> Stashed changes
     }
 }
