@@ -57,7 +57,7 @@ function NavBar(props) {
                 </div>
                 <div className="nav-news-container">
                     <div className='nav-news'>
-                        <NewsLetter text="This is what I've been up to."/>
+                        <NewsLetter text="EUS Engineer @ Sculptor Capital Management"/>
                     </div>
                     
                 </div>
