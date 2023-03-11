@@ -172,7 +172,7 @@ body {
 }
 
 .second-sectional-container h2{
-    font-size: 2rem;
+    font-size: 4vw;
     padding-bottom: 1%;
 }
 .collective-passions-flex-container{
@@ -208,13 +208,14 @@ body {
     object-fit: fill;
 }
 .passion-label{
-    font-size: 1em;
-    font-weight: bold;
+    font-size: 2vw;
+    /* font-weight: bold; */
 }
 
 /* End of Second Sectional */
 /*------------------------------------------------------------------*/
 /* Start of Third Sectional */
+/* Projects */
 .third-sectional{
     display: flex;
     width: 100%;
@@ -262,6 +263,7 @@ body {
 /* End of Third Sectional */
 /*------------------------------------------------------------------*/
 /* Start of Fourth Sectional */
+/* Experiences */
 .fourth-sectional{
     display: flex;
     width: 100%;
