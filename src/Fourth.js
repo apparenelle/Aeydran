@@ -1,9 +1,10 @@
 import './App.css';
 import React from 'react';
+import bayernlbJobLogo from './assets/bayernlb.jpeg';
 import nysJobLogo from './assets/nys.png';
 import anaDataJobLogo from './assets/anadata.jpeg';
 import sculptorJobLogo from './assets/sculptor.png';
-import bayernlbJobLogo from './assets/bayernlb.jpeg';
+
 
 export class Fourth extends React.Component{
     render(){
