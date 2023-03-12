@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import bayernlbJobLogo from './assets/bayernlb.jpeg';
+import bayernlbJobLogo from './assets/bayernlb.jpg';
 import nysJobLogo from './assets/nys.png';
 import anaDataJobLogo from './assets/anadata.jpeg';
 import sculptorJobLogo from './assets/sculptor.png';
