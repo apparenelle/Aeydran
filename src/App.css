@@ -1,30 +1,22 @@
-/* Globlal */
-
-/* background-color: #d1ebea; */
 @font-face {
     font-family: "Open-Sans";
     src: local("Open-Sans"), url("./fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf") format("truetype")
 }
-html, body{
+html,body {
     width: 100vw;
-    /* min-height: min(100vh, 800rem); */
     overflow: scroll;
-
-}
-body {
     background-color: #683B2B;
     font-family: Open-Sans, Arial, Helvetica;
-    /* overflow: hidden; */
 }
 
 /*----------Start of Nav----------*/
 .upper-sectional {
     display: flex;
     flex-direction: column;
+    /* height: 5vh; */
 }
 .nav-flex-container {
     display: flex;
-    /* flex-grow: 1; */
     flex-direction: row;
     flex-wrap: nowrap;
     background-color: #683B2B;
@@ -98,7 +90,8 @@ body {
     display: flex;
     flex-direction: column;
     width:100%;
-    /* height: ; */
+    height: max(35vh,35rem);
+    /* height: 35vh; */
     min-height: fit-content;
     min-width: fit-content;
     background-color: #DED1BD;
@@ -143,10 +136,10 @@ body {
     overflow: visible;
 }
 .greeting-flex h1{
-    font-size: 3em;
+    font-size: 3.5vw;
 }
 .greeting-flex h2{
-    font-size: 2em;
+    font-size: 2vw;
 }
 
 /*------------------------------------------------------------------*/
@@ -155,24 +148,23 @@ body {
 .second-sectional{
     display: flex;
     width: 100%;
-    /* min-height: fit-content; */
+    height: max(30vh,35rem);
     flex-direction: column;
     align-items: center;
     background-color: #D49E8D;
-    height: fit-content;
     justify-content: center;
 }
 .second-sectional-container {
     display: flex;
     flex-direction: column;
-    width: min(70vw, 150rem);
+    width: 90vw;
     align-items: center;
     /* height:fit-content; */
     
 }
 
 .second-sectional-container h2{
-    font-size: 4vw;
+    font-size: 2.5vw;
     padding-bottom: 1%;
 }
 .collective-passions-flex-container{
@@ -219,8 +211,8 @@ body {
 .third-sectional{
     display: flex;
     width: 100%;
-    height: auto;
-    /* min-height: fit-content; */
+    height: 40vw;
+    min-height: 30em;
     background-color: #B08401;
     flex-direction: column;
     /* justify-content: center; */
@@ -228,7 +220,7 @@ body {
 
 }
 .third-sectional h2{
-    font-size: 1.5vw;
+    font-size: 2.5vw;
     padding-bottom: 1%;
 }
 .collective-projects-flex-container{
@@ -267,8 +259,8 @@ body {
 .fourth-sectional{
     display: flex;
     width: 100%;
-    height: auto;
-    /* min-height: fit-content; */
+    height: 40vw;
+    min-height: 25em;
     background-color: #693B2B;
     flex-direction: column;
     justify-content: center;
@@ -277,7 +269,7 @@ body {
 }
 /* Experience category */
 .fourth-sectional h2{
-    font-size: 1.5vw;
+    font-size: 2.5vw;
     padding-bottom: 1%;
 }
 .box-layout-flex-row-container{
@@ -358,7 +350,7 @@ body {
         /* overflow: hidden; */
         align-items: center;
         justify-content: flex-end;
-        flex-basis: 80%;
+        /* flex-basis: 80%; */
     }
     .nav-flex-container button{
         background-color: none;

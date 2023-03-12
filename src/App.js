@@ -50,7 +50,7 @@ function App() {
       <Third />
       <Fourth />
       <Footer />
-    </div>
+      </div>
   );
 }
 
