@@ -34,8 +34,8 @@ export function Sandwich() {
 
 
 function openMobileNav(){
-    document.getElementById("myNav").style.width = "25%";
-    document.getElementById("root").style.marginLeft = "25%";
+    document.getElementById("myNav").style.width = "40%";
+    document.getElementById("root").style.marginLeft = "40%";
     document.getElementById("root").style.transition = "0.5s";
 
     console.log("nav was opened");

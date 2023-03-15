@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Open-Sans";
-    src: local("Open-Sans"), url("./fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf") format("truetype")
+    src: local("Open-Sans"), url("./fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
 }
 html,body {
     width: 100vw;
@@ -101,7 +101,7 @@ html,body {
 .first-sectional-container {
     display: flex;
     flex-direction: row;
-    width: min(70vw,150rem)
+    width: min(70vw,150rem);
 }
 
 .photo-flex{
@@ -167,8 +167,7 @@ html,body {
 }
 
 .second-sectional-container h2{
-    font-size: min(2.5vw,);
-    
+    font-size: min(2.5vw);
     padding-bottom: 1%;
 }
 .collective-passions-flex-container{
@@ -204,7 +203,7 @@ html,body {
     object-fit: fill;
 }
 .passion-label{
-    font-size: min(2vw,);
+    font-size: min(2vw);
     /* font-weight: bold; */
 }
 
@@ -346,8 +345,8 @@ html,body {
 /*------------------------------------------------------------------*/
 /* saving this color Honeydew: #F0FFF0 */
 
-/* Mobile Design */
-@media (max-width: 1080px){
+/* Tablet Design */
+@media only screen and (min-width: 600px) and (max-width: 1080px){
     .nav-link-flex-container{
         width: 80%;
         display: flex;
@@ -372,7 +371,7 @@ html,body {
     }
     .mobile-sandwich-1,
     .mobile-sandwich-2,
-    .mobile-sandwich-3 {
+    .mobile-sandwich-3{
         /* Creates the sandwich stats */
         width:2.25rem;
         height:.3rem;
@@ -387,7 +386,7 @@ html,body {
         opacity: 0;
     }
     .change .mobile-sandwich-3 {
-        transform: translate(0,-.8rem) rotate(45deg)
+        transform: translate(0,-.8rem) rotate(45deg);
     }
     .overlay{
         height: 100%;
@@ -418,27 +417,62 @@ html,body {
     }
     .overlay-content a:hover {
         color: #683B2B;
-    }
-    /* Makes passions mobile friendly */
-    /* .collective-passions-flex-container{
+    }   
+}
+
+@media only screen and (max-width: 599px){
+    .nav-flex-container {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-        height: 70%;
+        padding: 550px;
+        flex-wrap: nowrap;
+        background-color: #683B2B;
+        padding-top: 3%;
         padding-bottom: 2%;
-    
     }
-    .passion-box-layout{
+    .nav-logo-flex-container h4{
+        color: white;
+        font-size: 3vw;
+        padding-left: 7vw;
+    }
+    .nav-link-flex-container{
+        width: 80%;
         display: flex;
-        width: 75%;
-        height: 25%;
-        object-fit: stretch;
-        flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
+        margin-right: 3vw;
+        /* flex-basis: 80%; */
+    }
+    .nav-news h5{
+        margin: 0px;
+        padding: .4rem;
+        color: white;
+        font-size: 3vw;
+        overflow: hidden;
+    }
+    .mobile-sandwich-1,
+    .mobile-sandwich-2,
+    .mobile-sandwich-3 {
+        /* Creates the sandwich stats */
+        width: 5rem;
+        height:.5rem;
+        background-color: #FFFFFF;
+        margin: 0.55rem;
+        /* margin-left: 1rem; */
+        transition: 0.4s;
+    }
+    .change .mobile-sandwich-1 {
+        transform: translate(0, 1.55rem) rotate(-45deg);
+    }
+    .change .mobile-sandwich-3 {
+        transform: translate(0,-1.55rem) rotate(45deg);
+    }
+    .overlay-content a {
+        color: white;
         text-decoration: none;
-        color: black;
-    }*/
-} 
+        padding: 4vw;
+        font-size: 4vw;
+    }
+
+}
+ 
