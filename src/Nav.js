@@ -46,13 +46,6 @@ function NavBar(props) {
                     <div className="nav-link-flex-container">
                         < Sandwich />
                         < OverlayNav/>
-                        
-                        {/* <ul className="nav-links">
-                            <li><a href='#'>Home+1</a></li>
-                            <li><a href='#'>Projects+2</a></li>
-                            <li><a href='#'>About Me</a></li>
-                            <li><a href='#'>Skills</a></li>
-                        </ul> */}
                     </div>           
                 </div>
                 <div className="nav-news-container">
