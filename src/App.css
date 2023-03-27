@@ -7,13 +7,13 @@ html,body {
     overflow: scroll;
     background-color: #683B2B;
     font-family: Open-Sans, Arial, Helvetica;
+    overflow-x: hidden;
 }
 
 /*----------Start of Nav----------*/
 .upper-sectional {
     display: flex;
     flex-direction: column;
-    /* height: 5vh; */
 }
 .nav-flex-container {
     display: flex;
@@ -23,7 +23,6 @@ html,body {
 }
 .nav-logo-flex-container {
     display: flex;
-    /* width: 25%; */
     flex-basis: 20%;
     align-items: center;
     justify-content: center;
@@ -36,7 +35,6 @@ html,body {
 .nav-link-flex-container { 
     width: 80%;
     display: flex;
-    /* overflow: hidden; */
     align-items: center;
     justify-content: center;
     flex-basis: 80%;
@@ -76,6 +74,8 @@ html,body {
     margin: 0px;
     padding: .4rem;
     color: white;
+    white-space: nowrap;
+    overflow: hidden;
 }
 /*------------------------------------------------------------------*/
 
@@ -422,28 +422,35 @@ html,body {
 
 @media only screen and (max-width: 599px){
     .nav-link-flex-container{
-        width: 80%;
+        /* width: 80%; */
         display: flex;
         /* overflow: hidden; */
-        align-items: center;
-        justify-content: flex-end;
+        /* align-items: center; */
+        /* justify-content: flex-end; */
         /* flex-basis: 80%; */
     }
     .nav-flex-container button{
         background-color: none;
     }
+
     .nav-logo-flex-container h4{
         color: white;
         font-size: 5vw;
         padding-left: 13vw;
+        width: fit-content;
     }
     .nav-link-flex-container{
-        width: 80%;
+        /* width: 60%; */
         display: flex;
         align-items: center;
         justify-content: flex-end;
         margin-right: 3vw;
+        margin-left: 3vw;
         /* flex-basis: 80%; */
+    }
+    .nav-news-container{
+        overflow: hidden;
+        height: 7vw;
     }
     .nav-news h5{
         margin: 0px;
@@ -467,21 +474,21 @@ html,body {
     .mobile-sandwich-2,
     .mobile-sandwich-3 {
         /* Creates the sandwich stats */
-        width: 4rem;
-        height:.5rem;
+        width: 3.5rem;
+        height:.4rem;
         background-color: #FFFFFF;
         margin: 0.4rem;
         /* margin-left: 1rem; */
         transition: 0.4s;
     }
     .change .mobile-sandwich-1 {
-        transform: translate(0, 1.3em) rotate(-45deg);
+        transform: translate(0, 1.2em) rotate(-45deg);
     }
     .change .mobile-sandwich-2 {
         opacity: 0;
     }
     .change .mobile-sandwich-3 {
-        transform: translate(0,-1.3em) rotate(45deg);
+        transform: translate(0,-1.2em) rotate(45deg);
     }
     .overlay{
         height: 100%;

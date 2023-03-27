@@ -35,15 +35,15 @@ export function Sandwich() {
 
 function openMobileNav(){
     document.getElementById("myNav").style.width = "40%";
-    document.getElementById("root").style.marginLeft = "40%";
-    document.getElementById("root").style.transition = "0.5s";
+    document.getElementById("app").style.marginLeft = "40%";
+    document.getElementById("app").style.transition = "0.5s";
 
     console.log("nav was opened");
 }
 
 function closeMobileNav(){
     document.getElementById("myNav").style.width = "0%";
-    document.getElementById("root").style.marginLeft = "0%";
+    document.getElementById("app").style.marginLeft = "0%";
 
     console.log("nav was  closed");
 }
