@@ -18,18 +18,16 @@ function NavBar(props) {
                     <div className="nav-logo-flex-container">
                         <h4>Aeydran</h4>
                     </div>  
-                    <div className="nav-link-flex-container">
-                        <ul className="nav-links">
-                            <li><a href='#'>Home</a></li>
-                            <li><a href='#'>Projects</a></li>
-                            <li><a href='#'>About Me</a></li>
-                            <li><a href='#'>Skills</a></li>
-                        </ul>
-                    </div>           
+                    <ul className="nav-links">
+                        <li><a href='#'>Home</a></li>
+                        <li><a href='#'>Projects</a></li>
+                        <li><a href='#'>About Me</a></li>
+                        <li><a href='#'>Skills</a></li>
+                    </ul>
                 </div>
                 <div className="nav-news-container">
                     <div className='nav-news'>
-                        <NewsLetter text="This is what I've been up to."/>
+                        <NewsLetter text="EUS Engineer @ Sculptor Capital Management"/>
                     </div>
                     
                 </div>

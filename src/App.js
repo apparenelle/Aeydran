@@ -10,7 +10,7 @@ import React, { useState, useEffect } from 'react';
 
 function App() {
   let width = window.innerWidth;
-  let mobileWidth = 1080; //in pixels swaps website over to mobile
+  let mobileWidth = 1025; //in pixels swaps website over to mobile
   let isMobile = undefined;
   
   if (width < mobileWidth) {

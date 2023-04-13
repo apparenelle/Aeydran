@@ -1,49 +1,62 @@
 @font-face {
     font-family: "Open-Sans";
     src: local("Open-Sans"), url("./fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
+} 
+@font-face {
+    font-family: "EB-Garamond"; /* Closest font to Silian Rail iykyk */
+    src: local("EB-Garamond"), url("./fonts/EB_Garamond/EBGaramond-Italic-VariableFont_wght.ttf"), format(truetype);
+
 }
 html,body {
     width: 100vw;
-    overflow: scroll;
+    overflow-y: scroll;
     background-color: #683B2B;
-    font-family: Open-Sans, Arial, Helvetica;
-    overflow-x: hidden;
+    font-family: EB-Garamond;
+    min-width: fit-content;
+    overflow-x: scroll; /*Change this to edit space between x-axis*/
+    /* position: ; */
 }
 
 /*----------Start of Nav----------*/
 .upper-sectional {
+    width: 100%;
+    position: fixed;
     display: flex;
     flex-direction: column;
+    /* height: fit-content; */
 }
 .nav-flex-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     background-color: #683B2B;
 }
 .nav-logo-flex-container {
     display: flex;
-    flex-basis: 20%;
     align-items: center;
     justify-content: center;
     width: 20%;
+    height: fit-content;
 
 }
 .nav-logo-flex-container h4{
     color: white;
 }
-.nav-link-flex-container { 
-    width: 80%;
+.nav-flex-container ul{
+    width: 100%;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    flex-basis: 80%;
 }
+
+
 .nav-links {
-    margin-left:-25%;
+    position: absolute;
+    width: 100%;
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    align-self: center;
+    justify-content: center;
     padding: 0px; /* Necessary to keep padding off */
  }
 
@@ -52,7 +65,7 @@ html,body {
 }
 .nav-links li a{
     text-decoration: none;
-    padding: 10em 1em;
+    margin-right: 3em;
     color: white;
 }
 .nav-links li a:hover{  
@@ -93,7 +106,7 @@ html,body {
     height: max(35vh,35rem);
     /* height: 35vh; */
     min-height: fit-content;
-    min-width: fit-content;
+    /* min-width: fit-content; */
     background-color: #DED1BD;
     align-items: center;
     justify-content: center;
@@ -350,7 +363,7 @@ html,body {
     .nav-link-flex-container{
         width: 80%;
         display: flex;
-        /* overflow: hidden; */
+        overflow: hidden;
         align-items: center;
         justify-content: flex-end;
         /* flex-basis: 80%; */
@@ -421,33 +434,28 @@ html,body {
 }
 
 @media only screen and (max-width: 599px){
-    .nav-link-flex-container{
-        /* width: 80%; */
+    .nav-link-flex-container { 
+        width: 80%;
         display: flex;
-        /* overflow: hidden; */
-        /* align-items: center; */
-        /* justify-content: flex-end; */
-        /* flex-basis: 80%; */
+        align-items: center;
+        justify-content: flex-end;
+        /* overflow: ; */
+    }
+    .nav-logo-flex-container{
+        width: fit-content;
+    }
+    .nav-logo-flex-container h4{/*Come back to this to resolve extra space issue*/
+        color: white;
+        font-size: 5vw;
+        padding-left: 12vw;
+        /* width: fit-content; */
+        /* height: fit-content; */
     }
     .nav-flex-container button{
         background-color: none;
     }
 
-    .nav-logo-flex-container h4{
-        color: white;
-        font-size: 5vw;
-        padding-left: 13vw;
-        width: fit-content;
-    }
-    .nav-link-flex-container{
-        /* width: 60%; */
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        margin-right: 3vw;
-        margin-left: 3vw;
-        /* flex-basis: 80%; */
-    }
+
     .nav-news-container{
         overflow: hidden;
         height: 7vw;
@@ -468,11 +476,12 @@ html,body {
         margin-right:1rem;
         margin-left: 1rem;
         justify-content: center;
+        /* height: fit-content; */
 
     }
     .mobile-sandwich-1,
     .mobile-sandwich-2,
-    .mobile-sandwich-3 {
+    .mobile-sandwich-3 {/*Adjust sandwich stats to match 600px to 1024*/
         /* Creates the sandwich stats */
         width: 3.5rem;
         height:.4rem;
@@ -499,7 +508,7 @@ html,body {
         top: 0;
         background-color: rgb(0,0,0); /* Black fallback color */
         background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
-        overflow-x: hidden; /* Disable horizontal scroll */
+        overflow-x: hidden; 
         transition: 0.5s;
         display: flex;
         flex-direction: column;
