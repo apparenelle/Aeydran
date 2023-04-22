@@ -1,5 +1,5 @@
 //import all images and documents and us js to call them.
-import './App.css'
+// import './App.css'
 // import companyLogo from './assets/aeydran_animated.png';
 import React, { useEffect } from 'react';
 import { NewsLetter } from './News.js';
