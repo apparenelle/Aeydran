@@ -171,7 +171,7 @@ html,body {
 .second-sectional-container {
     display: flex;
     flex-direction: column;
-    max-width: 1000px;
+    max-width: 1250px;
     width: 90vw;
     height: 90vh;
     align-items: center;
@@ -185,20 +185,21 @@ html,body {
 }
 .collective-passions-flex-container{
     display: flex;
+    flex-grow: 1;
     flex-direction: row;
     /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
-    width: 90%;
-    height: 70%;
+    /* width: 90%; */
+    /* height: 70%; */
     padding-bottom: 2%;
 
 }
 .passion-box-layout{
     /* This is the anchor */
     display: flex;
-    width: 25%;
-    height: 80%;
+    /* width: 25%; */
+    /* height: 50%; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -207,16 +208,17 @@ html,body {
 }
 
 .passion-image{
+    flex-grow: 1;
     max-width:90%;
     /* min-width: 90%; */
-    max-height: 85%;
-    min-height: 75%;
-    min-width: 85%;
+    /* max-height: 85%; */
+    /* min-height: 75%; */
+    /* min-width: 85%; */
     border-radius: .75rem;
     object-fit: fill;
 }
 .passion-label{
-    font-size: min(2vw);
+    font-size: min(20px,2vw);
     /* font-weight: bold; */
 }
 
