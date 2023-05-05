@@ -6,7 +6,8 @@ function Second(props) {
         return(
             <div className='second-sectional'>
                 <h2>Passions</h2>
-                <div className='collective-passions-flex-container'>
+                <div className='second-sectional-container'>
+                    <div className='collective-passions-flex-container'>
                         <a href='#' className='passion-box-layout'>
                             <img className='passion-image' src='https://media.giphy.com/media/1569RvwRjejO2IcueA/giphy-downsized-large.gif'></img>
                             <div className='passion-label'><p>Trading</p></div>
@@ -23,6 +24,7 @@ function Second(props) {
                             <img className='passion-image' src='https://media.giphy.com/media/26gshn9NXKOMrnysU/giphy.gif'></img>
                             <div className='passion-label'><p>Photography</p></div>
                         </a>
+                    </div>
                 </div>
             </div>
         );
@@ -31,7 +33,7 @@ function Second(props) {
         return(
             <div className='second-sectional'>
                 <h2>Passions</h2>
-                <div className='master-collective-passions-flex-container'>
+                <div className='second-sectional-container'>
                     <div className='collective-passions-flex-container'>
                             <a href='#' className='passion-box-layout'>
                                 <img className='passion-image' src='https://media.giphy.com/media/1569RvwRjejO2IcueA/giphy-downsized-large.gif'></img>

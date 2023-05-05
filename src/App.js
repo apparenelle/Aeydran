@@ -5,6 +5,7 @@ import {Third} from './Third.js';
 import {Fourth} from './Fourth.js';
 import {Footer} from './Footer.js';
 import './App.css';
+import './Tablet.css';
 import './fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf'
 import React, { useState, useEffect } from 'react';
 

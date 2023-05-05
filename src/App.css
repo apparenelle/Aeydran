@@ -9,14 +9,13 @@
 }
 html,body {
     width: 100vw;
-    overflow-y: scroll;
     background-color: #683B2B;
     font-family: Open-Sans;
-    min-width: fit-content;
-    /* overflow-x: scroll;  */
+    /* min-width: fit-content; */
+    overflow-x: hidden; 
     /* position: ; */
 }
-
+@media (min-width: 600px) {
 /*----------Start of Nav----------*/
 .upper-sectional {
     width: 100%;
@@ -44,6 +43,8 @@ html,body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    /* justify-content: flex-end; */
+    /* flex-basis: 80%; */
 }
 
 
@@ -157,13 +158,16 @@ html,body {
 .second-sectional{
     display: flex;
     width: 100%;
-    /* min-height: 30em; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #D49E8D;
 }
-
+.second-sectional-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .second-sectional-container h2{
     font-size: 2.5vw;
     padding-bottom: 1%;
@@ -209,30 +213,29 @@ html,body {
 .third-sectional{
     display: flex;
     width: 100%;
-    height: 40vw;
-    min-height: 30em;
-    background-color: #B08401;
+    min-height: 60vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    background-color: #B08401;
+}
+.third-sectional-container h2{
+    font-size: 1.5em;
+    /* margin-bottom: 1%; */
+    /* height: fit-content; */
 }
 .third-sectional-container{
     display: flex;
+    max-width: 1500px;
     width: 100%;
-    height: 90%;
+    height: 100%;
+    gap: 2vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.third-sectional h2{
-    font-size: 1.5em;
-}
-.master-collective-passions-flex-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+
+
 .collective-projects-flex-container{
     display: flex;
     flex-direction: row;
@@ -269,7 +272,7 @@ html,body {
     display: flex;
     width: 100%;
     /* height: 60vw; */
-    min-height: 25em;
+    min-height: 60vh;
     background-color: #693B2B;
     flex-direction: column;
     justify-content: center;
@@ -281,13 +284,14 @@ html,body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: 1500px;
     width: 100%;
     height: 90%;
 }
 /* Experience category */
-.fourth-sectional h2{
+.fourth-sectional-container h2{
     font-size: 2.5vw;
-    padding-bottom: 1%;
+    margin-bottom: 1%;
 }
 .box-layout-flex-row-container{
     display: flex;
@@ -356,84 +360,11 @@ html,body {
     padding: 1vw;
     text-decoration: none;
     color: white;
+}    
 }
 /*------------------------------------------------------------------*/
 /* saving this color Honeydew: #F0FFF0 */
 
-/* Tablet Design */
-@media (min-width: 600px) and (max-width: 1024px){
-    .nav-link-flex-container{
-        width: 80%;
-        display: flex;
-        overflow: hidden;
-        align-items: center;
-        justify-content: flex-end;
-        flex-basis: 80%;
-    }
-    .nav-flex-container button{
-        background-color: none;
-    }
-    .mobile-sandwich{
-        height: 80%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0.5rem;
-        margin-right:1rem;
-        margin-left: 1rem;
-        justify-content: center;
-
-    }
-    .mobile-sandwich-1,
-    .mobile-sandwich-2,
-    .mobile-sandwich-3{
-        /* Creates the sandwich stats */
-        width:2.25rem;
-        height:.3rem;
-        background-color: #FFFFFF;
-        margin: 0.24rem;
-        transition: 0.4s;
-    }
-    .change .mobile-sandwich-1 {
-        transform: translate(0, .8rem) rotate(-45deg);
-    }
-    .change .mobile-sandwich-2 {
-        opacity: 0;
-    }
-    .change .mobile-sandwich-3 {
-        transform: translate(0,-.8rem) rotate(45deg);
-    }
-    .overlay{
-        height: 100%;
-        width: 0;
-        position: fixed; 
-        z-index: 1; /* Sit on top */
-        left: 0;
-        top: 0;
-        background-color: rgb(0,0,0); /* Black fallback color */
-        background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
-        overflow-x: hidden; /* Disable horizontal scroll */
-        transition: 0.5s;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .overlay-content{
-        position: relative;
-        width: 100%;
-        text-align: center; 
-        display: flex;
-        flex-direction: column;
-    }
-    .overlay-content a {
-        color: white;
-        text-decoration: none;
-        padding: 1rem;
-    }
-    .overlay-content a:hover {
-        color: #683B2B;
-    }   
-}
 
 @media only screen and (max-width: 599px){
     .nav-link-flex-container { 
@@ -534,7 +465,8 @@ html,body {
         padding: 4vw;
         font-size: 4vw;
     }
-    .first-sectional-container {
+    /* Adjustments to primary css flags */
+    /* .first-sectional-container {
         display: flex;
         flex-direction: row;
         width: 95vw;
@@ -555,6 +487,6 @@ html,body {
         height: 25%;
         border-radius: .5rem;
         object-fit: cover;
-      }
+      } */
 }
  
