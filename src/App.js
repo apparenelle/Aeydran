@@ -1,16 +1,18 @@
 import Bar from './Nav.js';
 import {First} from './First.js';
-import {Second} from './Second.js';
+import Second from './Second.js';
 import {Third} from './Third.js';
 import {Fourth} from './Fourth.js';
 import {Footer} from './Footer.js';
 import './App.css';
+import './Tablet.css';
+import './Mobile.css';
 import './fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf'
 import React, { useState, useEffect } from 'react';
 
 function App() {
   let width = window.innerWidth;
-  let mobileWidth = 1080; //in pixels swaps website over to mobile
+  let mobileWidth = 1025; //in pixels swaps website over to mobile
   let isMobile = undefined;
   
   if (width < mobileWidth) {
@@ -45,11 +47,11 @@ function App() {
   return ( 
     <div className="App" id='app'>
       <Bar isMobile={mobileState} />
-      <First />
-      <Second />
-      <Third />
-      <Fourth />
-      <Footer />
+      <First isMobile={mobileState}/>
+      <Second isMobile={mobileState}/>
+      <Third isMobile={mobileState}/>
+      <Fourth isMobile={mobileState}/>
+      <Footer isMobile={mobileState}/>
       </div>
   );
 }
@@ -59,6 +61,5 @@ function sleep(ms) {
   // use just in case too many calls are occuring
   return new Promise(resolve => setTimeout(resolve, ms));
 }
-
 
 export default App;

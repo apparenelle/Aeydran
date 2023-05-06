@@ -11,8 +11,10 @@ export class First extends React.Component {
                         <img className='photo-selfie' src={greetingPhoto} alt=""></img>
                     </div>
                     <div className='greeting-flex'>
-                        <h1>I am Adrian</h1>
-                        <h2>"Believe you can and you're halfway there."</h2>
+                        <h1>Aeydran</h1>
+                        <h2>N.Y.C</h2>
+                        <h2>Software Engineer</h2>
+                        {/* <h2>"Believe you can and you're halfway there."</h2> */}
                     </div>
                 </div>
             </div>

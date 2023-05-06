@@ -4,7 +4,8 @@ import React from 'react';
 export class Third extends React.Component{
     render(){
         return(
-            <div className='third-sectional'>
+        <div className='third-sectional'>
+            <div className='third-sectional-container'>
                 <h2>My Masterpieces</h2>
                 <div className='collective-projects-flex-container'>
                     <a className='projects-box-layout' href='#'>
@@ -17,6 +18,7 @@ export class Third extends React.Component{
                     </a>
                 </div>
             </div>
+        </div>
         );
     }
 }

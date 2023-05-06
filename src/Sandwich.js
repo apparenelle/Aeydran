@@ -6,8 +6,6 @@ export function Sandwich() {
 
     function sandwichDance() {
         let x = document.getElementById("mobile-sandwich");
-        // let navOpened = false;
-        // console.log("TEST");
         if (typeof x !== "undefined") {
             if (mobileNavIsOpen!=true) {
                 x.classList.toggle("change");
@@ -35,7 +33,7 @@ export function Sandwich() {
 
 function openMobileNav(){
     document.getElementById("myNav").style.width = "40%";
-    document.getElementById("root").style.marginLeft = "40%";
+    // document.getElementById("root").style.marginLeft = "40%";
     document.getElementById("root").style.transition = "0.5s";
 
     console.log("nav was opened");
@@ -43,7 +41,7 @@ function openMobileNav(){
 
 function closeMobileNav(){
     document.getElementById("myNav").style.width = "0%";
-    document.getElementById("root").style.marginLeft = "0%";
+    // document.getElementById("root").style.marginLeft = "0%";
 
     console.log("nav was  closed");
 }
