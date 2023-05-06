@@ -1,9 +1,7 @@
 /* Tablet Design */
 @media (min-width: 600px) and (max-width: 1024px){
     .nav-link-flex-container{
-        /* width: 80%; */
         display: flex;
-        /* overflow: hidden; */
         align-items: center;
         justify-content: flex-end;
         flex-basis: 80%;
@@ -16,10 +14,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0.5rem;
-        margin-right:1rem;
-        margin-left: 1rem;
         justify-content: center;
+
+        margin: 2vw 4vw 2vw 0vw;
+        /* margin-right:1vw; */
+        /* margin-left: 1vw; */
 
     }
     .mobile-sandwich-1,

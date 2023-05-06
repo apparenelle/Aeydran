@@ -21,7 +21,6 @@ export class Fourth extends React.Component{
                             <img className='experience-image' src={sculptorJobLogo}></img>
                             <div className='experience-label'><p>Sculptor Capital Management</p></div>
                         </div>
-                        
                     </div>
                     <div className='box-layout-flex-row-container'>
                     <div className='experience-items-flex-container'>

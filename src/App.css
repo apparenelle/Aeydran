@@ -57,14 +57,20 @@ html,body {
     align-self: center;
     justify-content: center;
     padding: 0px;
+    gap: 5vw;
  }
 
 .nav-links li{
-    margin: 0.45em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    /* margin: 0.45em; */
 }
 .nav-links li a{
     text-decoration: none;
-    margin-right: 3em;
+    /* margin-right: 3em; */
     color: white;
 }
 .nav-links li a:hover{  
@@ -168,14 +174,17 @@ html,body {
     flex-direction: column;
     justify-content: center;
 }
-.second-sectional-container h2{
-    font-size: 2.5vw;
-    padding-bottom: 1%;
+.second-sectional h2{
+    /* font-size: 2.75vh; */
+    font-size: max(2.25vh,1.2em);
+
+    margin-bottom: 2.5vh;
 }
 .collective-passions-flex-container{
     display: flex;
     /* flex-grow: 1; */
     flex-direction: row;
+    gap: 4vw;
     margin-left: 1%;
     margin-right: 1%;
     justify-content: center;
@@ -213,22 +222,20 @@ html,body {
 .third-sectional{
     display: flex;
     width: 100%;
-    min-height: 60vh;
+    min-height: 50vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #B08401;
 }
 .third-sectional-container h2{
-    font-size: 1.5em;
-    /* margin-bottom: 1%; */
-    /* height: fit-content; */
+    font-size: max(2.25vh,1.2em);
 }
 .third-sectional-container{
     display: flex;
     max-width: 1500px;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     gap: 2vw;
     flex-direction: column;
     justify-content: center;
@@ -271,7 +278,6 @@ html,body {
 .fourth-sectional{
     display: flex;
     width: 100%;
-    /* height: 60vw; */
     min-height: 60vh;
     background-color: #693B2B;
     flex-direction: column;
@@ -286,29 +292,28 @@ html,body {
     justify-content: center;
     max-width: 1500px;
     width: 100%;
-    height: 90%;
+    /* height: 90%; */
 }
 /* Experience category */
 .fourth-sectional-container h2{
-    font-size: 2.5vw;
-    margin-bottom: 1%;
+    font-size: max(2.25vh,1.2em);
 }
 .box-layout-flex-row-container{
     display: flex;
     flex-direction: row;
+    gap: 30px;
     width: 95%;
-    height: 28em;
+    height: min(40vh,50vw);
     align-items: center;
     justify-content: center;
 }
 .experience-items-flex-container{
     display: flex;
-    margin: 1.5%;
+    /* gap: 20px; */
+    /* margin: 1.25vw; */
     width: 50%;
     height: 100%;
-    /* object-fit: cover; */
     flex-direction: column;
-    /* text-decoration: none; */
     color: white;
     justify-content: center;
     align-items: center;
@@ -318,10 +323,10 @@ html,body {
     width: 100%;
     height: 60%;
     border-radius: .5rem;
-    object-fit: cover;
+    /* object-fit: ; */
   }
 .experience-label{
-    font-size: 1.3vw;
+    font-size: 1.3vh;
     font-weight: bold;
 }
 /*------------------------------------------------------------------*/
@@ -330,18 +335,18 @@ html,body {
 .footer-sectional{
     display: flex;
     width: 100%;
-    height: auto;
-    /* min-height: fit-content; */
     background-color: #48494B;
     flex-direction: column;
     align-items: center;
     color: white;
 }
 .footer-sectional h2{
-    font-size: 1.5vw;
-    margin: 0rem;
-    margin-top: .75vw;
-    margin-bottom: .75vw;
+    font-size: max(1.5vh,1.2em);
+    margin:  .75vw 0rem .75vw 0rem; /*Top Right Bottom Left*/
+    /* margin-top: .75vw; */
+    /* margin-bottom: .75vw; */
+    /* font-size: 1.5vh; */
+
 }
 
 .footer-links-flex{
@@ -349,15 +354,13 @@ html,body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-size: 1.5vw;
-    width: 80%;
-    height: 20%;
+    font-size: max(1.5vh,1em);
+    /* width: 80%; */
+    /* height: 20%; */
 
 }
 .footer-links-flex a{
-    margin-left: 4%;
-    margin-right: 4%;
-    padding: 1vw;
+    padding: 1vh 7vw 2vh 7vw; /*Top Right Bottom Left*/
     text-decoration: none;
     color: white;
 }    
@@ -366,105 +369,7 @@ html,body {
 /* saving this color Honeydew: #F0FFF0 */
 
 
-@media only screen and (max-width: 599px){
-    .nav-link-flex-container { 
-        width: 80%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        /* position: fixed; */
-        /* overflow: ; */
-    }
-    .nav-logo-flex-container{
-        width: fit-content;
-    }
-    .nav-logo-flex-container h4{/*Come back to this to resolve extra space issue*/
-        color: white;
-        font-size: 5vw;
-        padding-left: 12vw;
-        /* width: fit-content; */
-        /* height: fit-content; */
-    }
-    .nav-flex-container button{
-        background-color: none;
-    }
 
-
-    .nav-news-container{
-        overflow: hidden;
-        height: 7vw;
-    }
-    .nav-news h5{
-        margin: 0px;
-        padding: .4rem;
-        color: white;
-        font-size: 3vw;
-        overflow: hidden;
-    }
-    .mobile-sandwich{
-        height: 80%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0.5rem;
-        margin-right:1rem;
-        margin-left: 1rem;
-        justify-content: center;
-        /* position: fixed; */
-        /* height: fit-content; */
-
-    }
-    .mobile-sandwich-1,
-    .mobile-sandwich-2,
-    .mobile-sandwich-3 {/*Adjust sandwich stats to match 600px to 1024*/
-        /* Creates the sandwich stats */
-        width: 3.5rem;
-        height:.4rem;
-        background-color: #FFFFFF;
-        margin: 0.4rem;
-        /* margin-left: 1rem; */
-        transition: 0.4s;
-    }
-    .change .mobile-sandwich-1 {
-        transform: translate(0, 1.2em) rotate(-45deg);
-    }
-    .change .mobile-sandwich-2 {
-        opacity: 0;
-    }
-    .change .mobile-sandwich-3 {
-        transform: translate(0,-1.2em) rotate(45deg);
-    }
-    .overlay{
-        height: 100%;
-        width: 0;
-        position: fixed; 
-        z-index: 1; /* Sit on top */
-        left: 0;
-        top: 0;
-        background-color: rgb(0,0,0); /* Black fallback color */
-        background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
-        overflow-x: hidden; 
-        transition: 0.5s;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .overlay-content{
-        position: relative;
-        width: 100%;
-        text-align: center; 
-        display: flex;
-        flex-direction: column;
-    }
-    .overlay-content a:hover {
-        color: #683B2B;
-    }
-    .overlay-content a {
-        color: white;
-        text-decoration: none;
-        padding: 4vw;
-        font-size: 4vw;
-    }
     /* Adjustments to primary css flags */
     /* .first-sectional-container {
         display: flex;
@@ -488,5 +393,5 @@ html,body {
         border-radius: .5rem;
         object-fit: cover;
       } */
-}
+/* } */
  

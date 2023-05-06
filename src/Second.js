@@ -29,7 +29,7 @@ function Second(props) {
             </div>
         );
     }
-    else {
+    else { /*IsMobile = True */
         return(
             <div className='second-sectional'>
                 <h2>Passions</h2>
@@ -44,7 +44,6 @@ function Second(props) {
                                 <img className='passion-image' src='https://media.giphy.com/media/wwg1suUiTbCY8H8vIA/giphy-downsized-large.gif'></img>
                                 <div className='passion-label'><p>Coding</p></div>
                             </a>
-
                     </div>
                     <div className='collective-passions-flex-container'>
                         <a className='passion-box-layout' href='#'>
