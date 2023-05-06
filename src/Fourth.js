@@ -13,23 +13,23 @@ export class Fourth extends React.Component{
                 <div className='fourth-sectional-container'>
                     <h2>Experiences</h2>
                     <div className='box-layout-flex-row-container'>
-                        <div  className='experience-items-flex-container'>
-                            <img className='experience-image' src={nysJobLogo}></img>
-                            <div className='experience-label'><p>State of New York</p></div>
-                        </div>
-                        <div className='experience-items-flex-container'>
+                    <div className='experience-items-flex-container'>
                             <img className='experience-image' src={sculptorJobLogo}></img>
                             <div className='experience-label'><p>Sculptor Capital Management</p></div>
                         </div>
-                    </div>
-                    <div className='box-layout-flex-row-container'>
-                    <div className='experience-items-flex-container'>
+                        <div className='experience-items-flex-container'>
                             <img className='experience-image' src={bayernlbJobLogo}></img>
                             <div className='experience-label'><p>Bayerische LandesBank</p></div>
                         </div>
+                    </div>
+                    <div className='box-layout-flex-row-container'>
                         <div className='experience-items-flex-container'>
                             <img className='experience-image' src={anaDataJobLogo}></img>
                             <div className='experience-label'><p>Ana Data Consulting</p></div>
+                        </div>
+                        <div  className='experience-items-flex-container'>
+                            <img className='experience-image' src={nysJobLogo}></img>
+                            <div className='experience-label'><p>State of New York</p></div>
                         </div>
                     </div>
                 </div>
