@@ -268,7 +268,7 @@ html,body {
     border-radius: .5rem;
 }
 .projects-label{
-    font-size: 1.2em;
+    font-size: 2vh;
     font-weight: 700;
 }
 /* End of Third Sectional */
@@ -278,7 +278,7 @@ html,body {
 .fourth-sectional{
     display: flex;
     width: 100%;
-    min-height: 60vh;
+    min-height: 110vh;
     background-color: #693B2B;
     flex-direction: column;
     justify-content: center;
@@ -288,11 +288,11 @@ html,body {
 .fourth-sectional-container{
     display: flex;
     flex-direction: column;
+    gap: 40px;
     align-items: center;
     justify-content: center;
-    max-width: 1500px;
     width: 100%;
-    /* height: 90%; */
+    max-width: 1500px;
 }
 /* Experience category */
 .fourth-sectional-container h2{
@@ -301,18 +301,16 @@ html,body {
 .box-layout-flex-row-container{
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 3vw;
     width: 95%;
-    height: min(40vh,50vw);
+    height: 45%;
     align-items: center;
     justify-content: center;
 }
 .experience-items-flex-container{
     display: flex;
-    /* gap: 20px; */
-    /* margin: 1.25vw; */
-    width: 50%;
-    height: 100%;
+    width: 45%;
+    height: 40vh;
     flex-direction: column;
     color: white;
     justify-content: center;
@@ -321,13 +319,13 @@ html,body {
 }
 .experience-image {
     width: 100%;
-    height: 60%;
+    height: 90%;
     border-radius: .5rem;
     /* object-fit: ; */
   }
 .experience-label{
-    font-size: 1.3vh;
-    font-weight: bold;
+    font-size: 2vh;
+    font-weight: 500;
 }
 /*------------------------------------------------------------------*/
 
