@@ -15,7 +15,7 @@ function NavBar(props) {
         return(
             <div className="upper-sectional">
                 <div className="nav-flex-container">
-                    <div className="nav-logo-flex-container">
+                    <div className="nav-logo-container">
                         <h4>Aeydran</h4>
                     </div>  
                     <ul className="nav-links">
@@ -38,7 +38,7 @@ function NavBar(props) {
         return(
             <div className="upper-sectional">
                 <div className="nav-flex-container">
-                    <div className="nav-logo-flex-container">
+                    <div className="nav-logo-container">
                         <h4>Aeydran</h4>
                     </div>  
                     <div className="nav-link-flex-container">
