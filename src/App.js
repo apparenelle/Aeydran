@@ -1,5 +1,4 @@
-import Bar from './Nav.js';
-import {First} from './First.js';
+import First from './First.js';
 import Second from './Second.js';
 import {Third} from './Third.js';
 import {Fourth} from './Fourth.js';
@@ -46,7 +45,7 @@ function App() {
   }, [width, isMobile]);
   return ( 
     <div className="App" id='app'>
-      <Bar isMobile={mobileState} />
+      {/* <Bar isMobile={mobileState} /> */}
       <First isMobile={mobileState}/>
       <Second isMobile={mobileState}/>
       <Third isMobile={mobileState}/>
