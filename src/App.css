@@ -7,94 +7,23 @@
     src: local("EB-Garamond"), url("./fonts/EB_Garamond/EBGaramond-Italic-VariableFont_wght.ttf"), format(truetype);
 
 }
+:root {
+    --primaryColor: #372391;
+    --secondaryColor: #000000;
+    --tertiaryColor: #39383d;
+    --white: #ffffff;
+    /* --primaryColor: #43838f; */
+
+}
+
 html,body {
     width: 100vw;
-    background-color: #ffffff;
+    background-color: var(--tertiaryColor);
     font-family: Open-Sans;
-    /* min-width: fit-content; */
     overflow-x: hidden; 
-    /* position: ; */
 }
 @media (min-width: 600px) {
-/*----------Start of Nav----------*/
-.upper-sectional {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-.nav-flex-container {
-    display: flex;
-    flex-direction: row;
-    background-color: #43838f;
-}
-.nav-logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20%;
-    height: fit-content;
 
-}
-.nav-logo-container h4{
-    color: white;
-}
-.nav-flex-container ul{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    /* justify-content: flex-end; */
-    /* flex-basis: 80%; */
-}
-
-
-.nav-links {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    align-self: center;
-    justify-content: center;
-    padding: 0px;
-    gap: 5vw;
- }
-
-.nav-links li{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0px;
-    /* margin: 0.45em; */
-}
-.nav-links li a{
-    text-decoration: none;
-    /* margin-right: 3em; */
-    color: white;
-}
-.nav-links li a:hover{  
-    color:black;
-}
-
-/* Start of Nav News */
-.nav-news-container {
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    width: 100%;
-}
-.nav-news{
-    align-self: center;
-}
-
-.nav-news h5{
-    margin: 0px;
-    padding: .4rem;
-    color: white;
-    white-space: nowrap;
-    overflow: hidden;
-}
 /*------------------------------------------------------------------*/
 
 @keyframes slide-in {
@@ -108,22 +37,26 @@ html,body {
     display: flex;
     flex-direction: column;
     width:100%;
-    height: max(100vh,70rem);
-    min-height: fit-content;
-    /* background-color: #DED1BD; */
+    /* height: max(100vh,70rem); */
+    height: 100vh;
+    /* min-height: fit-content; */
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-around; */
 }
+/*----------Start of Nav----------*/
 .first-item-box{
     display: flex;
+    width: 100%;
     flex-direction: column;
+    margin: auto;
     /* align-self: center; */
-    justify-self: center;
+    /* justify-content: center; */
 }
 .first-sectional-container {
     display: flex;
     flex-direction: row;
     width: min(70vw,150rem);
+    min-width: fit-content;
     align-self: center;
     justify-self: center;
 }
@@ -150,9 +83,6 @@ html,body {
 .greeting-flex{
     width: 40%;
     display:flex;
-
-    /* border-width: 10px; */
-    /* border-color: #683B2B; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -162,18 +92,15 @@ html,body {
     animation-timing-function: linear;
     text-align: center;
     overflow: visible;
+    flex-wrap: nowrap;
 }
 .greetings-box{
-    border: 10px solid;
-    background-color:  #43838f;
     padding: 5vh;
-    border-radius: 20px;   
-    color: #ffffff;
+    color: #FFFFFF;
+    white-space: nowrap; /*Stops line from breaking*/
 }
 .greeting-flex h1{
     font-size: 2.75em;
-    /* border-width: 10px; */
-    /* border-color: #683B2B; */
 }
 .greeting-flex h2{
     font-size: 1.5em;
