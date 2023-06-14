@@ -8,7 +8,7 @@
 
 }
 :root {
-    --primaryColor: #372391;
+    --primaryColor: #7b5fc7;
     --secondaryColor: #000000;
     --tertiaryColor: #39383d;
     --white: #ffffff;
@@ -99,6 +99,9 @@ html,body {
     color: #FFFFFF;
     white-space: nowrap; /*Stops line from breaking*/
 }
+.greetings-box i{
+    color: var(--primaryColor);
+}
 .greeting-flex h1{
     font-size: 2.75em;
 }
@@ -111,9 +114,14 @@ html,body {
     justify-content: center;
 }
 .stackPng {
-    width: 10%;
+    width: 9%;
     margin: 3vw;
     aspect-ratio: 16/13;
+}
+.stackPngSQL{
+    width: 9%;
+    margin: 3vw;
+    aspect-ratio: 16/14;
 }
 /*------------------------------------------------------------------*/
 /* Beginning of Second Sectional */

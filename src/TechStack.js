@@ -17,7 +17,7 @@ function TechStack( props ){
             <img className='stackPng' src={reactPng}></img>
             <img className='stackPng' src={jsPng}></img>
             <img className='stackPng' src={pythonPng}></img>
-            <img className='stackPng sql' src={sqlPng}></img>
+            <img className='stackPngSQL' src={sqlPng}></img>
             <img className='stackPng' src={csharpPng}></img>
         </div>
     );
