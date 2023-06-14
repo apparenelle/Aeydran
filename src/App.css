@@ -95,7 +95,7 @@ html,body {
     flex-wrap: nowrap;
 }
 .greetings-box{
-    padding: 5vh;
+    margin: 5vh;
     color: #FFFFFF;
     white-space: nowrap; /*Stops line from breaking*/
 }
@@ -105,7 +105,16 @@ html,body {
 .greeting-flex h2{
     font-size: 1.5em;
 }
-
+.tech-stack-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.stackPng {
+    width: 10%;
+    margin: 3vw;
+    aspect-ratio: 16/13;
+}
 /*------------------------------------------------------------------*/
 /* Beginning of Second Sectional */
 /* Passions */

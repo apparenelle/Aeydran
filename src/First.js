@@ -4,6 +4,7 @@ import { NewsLetter } from './News.js';
 import { Sandwich } from './Sandwich';
 import { OverlayNav } from './OverlayNav';
 import greetingPhoto from './assets/gerald.png';
+import TechStack from './TechStack.js';
 
 import './App.css';
 
@@ -25,6 +26,7 @@ function First(props) {
                             </div>
                         </div>
                     </div>
+                    <TechStack/>
                 </div>
             </div>
         );
