@@ -6,10 +6,10 @@ import './App.css';
 function Navigation(props){
 return (
         <div className='container-nav'>
-            <a>Skills</a>
-            <a>Blog</a>
-            <a>Projects</a>
-            <a>Contact</a>
+            <a className='navigation-links'>Blog</a>
+            <a className='navigation-links'>Skills</a>
+            <a className='navigation-links'>Projects</a>
+            <a className='navigation-links'>Contact</a>
         </div>
     );
 

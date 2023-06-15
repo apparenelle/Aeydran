@@ -1,3 +1,7 @@
+import React, { useState, useEffect, useRef } from 'react';
+import useScrollSnap from 'react-use-scroll-snap';
+
+
 import First from './First.js';
 import Second from './Second.js';
 import {Third} from './Third.js';
@@ -7,7 +11,8 @@ import './App.css';
 import './Tablet.css';
 import './Mobile.css';
 import './fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf'
-import React, { useState, useEffect } from 'react';
+
+
 
 function App() {
   let width = window.innerWidth;
@@ -43,8 +48,13 @@ function App() {
       // sleep(500);  //only use to slow down in production if necessary
     });
   }, [width, isMobile]);
+
+  const scrollRef = useRef(null);
+  useScrollSnap({ ref:scrollRef, duration:2, delay: 0});
+
+
   return ( 
-    <div className="App" id='app'>
+    <div className="App" id='app' ref={scrollRef}>
       {/* <Bar isMobile={mobileState} /> */}
       <First isMobile={mobileState}/>
       <Second isMobile={mobileState}/>

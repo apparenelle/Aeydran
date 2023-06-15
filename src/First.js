@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import { NewsLetter } from './News.js';
 import { Sandwich } from './Sandwich';
 import { OverlayNav } from './OverlayNav';
+import Navigation from './Navigation.js';
 import greetingPhoto from './assets/gerald.png';
 import TechStack from './TechStack.js';
 
@@ -13,7 +14,8 @@ function First(props) {
     console.log(`Printing from navbar -- Value of isSmall: ${isSmall}`);
     if(!isSmall) {
         return (
-            <div className='first-sectional'>
+            <section className='first-sectional'>
+                <Navigation/>
                 <div className='first-item-box'>
                     <div className='first-sectional-container'>
                         <div className='photo-flex'>
@@ -28,12 +30,12 @@ function First(props) {
                     </div>
                     <TechStack/>
                 </div>
-            </div>
+            </section>
         );
     }
     else {
         return(
-            <div className='first-sectional'>
+            <section className='first-sectional'>
                 <div className='first-sectional-container'>
                     <div className='photo-flex'>
                         <img className='photo-selfie' src={greetingPhoto} alt=""></img>
@@ -46,7 +48,7 @@ function First(props) {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         );
     }   
     

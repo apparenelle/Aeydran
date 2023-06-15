@@ -4,7 +4,7 @@ import React from 'react';
 function Second(props) {
     if(props.isMobile == false) {
         return(
-            <div className='second-sectional'>
+            <section className='second-sectional'>
                 <h2>Passions</h2>
                 <div className='second-sectional-container'>
                     <div className='collective-passions-flex-container'>
@@ -26,12 +26,12 @@ function Second(props) {
                         </a>
                     </div>
                 </div>
-            </div>
+            </section>
         );
     }
     else { /*IsMobile = True */
         return(
-            <div className='second-sectional'>
+            <section className='second-sectional'>
                 <h2>Passions</h2>
                 <div className='second-sectional-container'>
                     <div className='collective-passions-flex-container'>
@@ -57,7 +57,7 @@ function Second(props) {
                     </div>
                 </div>
                 
-            </div>
+            </section>
         );
     }
 }

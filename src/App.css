@@ -12,26 +12,36 @@
     --secondaryColor: #000000;
     --tertiaryColor: #39383d;
     --white: #ffffff;
-    /* --primaryColor: #43838f; */
-
 }
+/* html{
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+} */
 
 html,body {
     width: 100vw;
+    /* min-height: 100vh; */
     background-color: var(--tertiaryColor);
     font-family: Open-Sans;
     overflow-x: hidden; 
+    
+}
+/* .scroller{
+    
+} */
+section{
+    scroll-snap-align: start;
 }
 @media (min-width: 600px) {
 
 /*------------------------------------------------------------------*/
 
 @keyframes slide-in {
-    0%      {opacity: 0; margin-left:-100%;}
-    25%     {opacity: 0.25; margin-left:-50%;}
-    50%     {opacity: 0.5; margin-left:-25%;}
-    75%     {opacity: 0.75; margin-left:-10%;}
-    100%    {opacity: 1; margin-left:0%;}
+    0%      {opacity: 0; margin-bottom:-35%;}
+    25%     {opacity: 0.25; margin-bottom:-17.5%;}
+    50%     {opacity: 0.5; margin-bottom:-8.75%;}
+    75%     {opacity: 0.75; margin-bottom:-4.375%;}
+    100%    {opacity: 1; margin-bottom:0%;}
 }
 .first-sectional {
     display: flex;
@@ -44,6 +54,21 @@ html,body {
     /* justify-content: space-around; */
 }
 /*----------Start of Nav----------*/
+.container-nav{
+    display: flex;
+    flex-direction: row;
+}
+.navigation-links{
+    color: var(--white);
+    padding: 1.5vw 3vw;
+    margin: 0vw 1.5vw;
+    /* z-index: 1; */
+}
+.navigation-links:hover{
+    color: var(--primaryColor);
+}
+
+
 .first-item-box{
     display: flex;
     width: 100%;
@@ -129,20 +154,21 @@ html,body {
 .second-sectional{
     display: flex;
     width: 100%;
+    height: 100vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background-color: #D49E8D; */
 }
 .second-sectional-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 80%;
 }
 .second-sectional h2{
     /* font-size: 2.75vh; */
-    font-size: max(2.25vh,1.2em);
-
+    color: var(--white);
+    font-size: max(2.25vh,2.75em);
     margin-bottom: 2.5vh;
 }
 .collective-passions-flex-container{
@@ -158,26 +184,28 @@ html,body {
 .passion-box-layout{
     /* This is the anchor */
     display: flex;
-    width: 25%;
-    height: 100%;
+
+    height: 85%;
     margin: 1%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     color: black;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
 .passion-image{
     width: 100%;
     height: 100%;
+    aspect-ratio: 16/14;
     border-radius: .75rem;
     object-fit: fill;
 }
 .passion-label{
     font-size: min(20px,2vw);
     font-weight: bold;
+    color: var(--white);
 }
 
 /* End of Second Sectional */
