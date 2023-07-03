@@ -12,11 +12,9 @@
     --secondaryColor: #000000;
     --tertiaryColor: #39383d;
     --white: #ffffff;
+    --width: 25%; /* default*/
 }
-/* html{
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-} */
+
 
 html,body {
     width: 100vw;
@@ -26,12 +24,7 @@ html,body {
     overflow-x: hidden; 
     
 }
-/* .scroller{
-    
-} */
-section{
-    scroll-snap-align: start;
-}
+
 @media (min-width: 600px) {
 
 /*------------------------------------------------------------------*/
@@ -184,14 +177,14 @@ section{
     /* gap: 4vw; */
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 .passion-box-layout{
     /* This is the anchor */
     display: flex;
-    width: 24%;
+    width: var(--width);
     height: auto;
-    flex-grow: ;
+    /* flex-grow: ; */
     margin: 1%;
     flex-direction: column;
     align-items: center;

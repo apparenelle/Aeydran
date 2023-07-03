@@ -1,7 +1,11 @@
 import './App.css';
 import React from 'react';
 
+import {itemBalanceWidthCalculator} from './Scripts';
+
+
 function Second(props) {
+    // itemBalanceWidthCalculator("passion-box-layout");
     if(props.isMobile == false) {
         return(
             <section className='second-sectional'>
@@ -25,6 +29,7 @@ function Second(props) {
                                 <img className='passion-image' src='https://media.giphy.com/media/26gshn9NXKOMrnysU/giphy.gif'></img>
                                 <div className='passion-label'><p>Photography</p></div>
                             </a>
+                            {props.style = {'--width' : `${itemBalanceWidthCalculator("passion-box-layout")}%`}}
                         </div>
                         <div className='passion-text'>
                             Testing Testing  123

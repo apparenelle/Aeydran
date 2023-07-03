@@ -4,7 +4,7 @@ import React from 'react';
 import * as THREE from " three"; 
 import * as dat from "dat-gui"
 import './App.css';
-import { Third } from './src/Third';
+import { Third } from './Third';
 
 function wonkyStructure( props ){
     // run traditional js here
