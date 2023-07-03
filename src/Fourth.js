@@ -38,6 +38,12 @@ export class Fourth extends React.Component{
     }
 }
 
+//                                Over the past 10 years, I have worked with a variety of passionate and collaborative companies. These e
+
+
+
+
+
 
 
 // <div className='fourth-sectional'>

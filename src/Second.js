@@ -21,6 +21,7 @@ function Second(props) {
                                 <img className='passion-image' src='https://media.giphy.com/media/wwg1suUiTbCY8H8vIA/giphy-downsized-large.gif'></img>
                                 <div className='passion-label'><p>Coding</p></div>
                             </a>
+                            {/* <a className='passion-box-layout' href='#'></a> */}
                             <a className='passion-box-layout' href='#'>
                                 <img className='passion-image' src='https://media.giphy.com/media/3oEduKi6hUgSVAay4M/giphy.gif'></img>
                                 <div className='passion-label'><p>Engineering</p></div>
@@ -29,10 +30,13 @@ function Second(props) {
                                 <img className='passion-image' src='https://media.giphy.com/media/26gshn9NXKOMrnysU/giphy.gif'></img>
                                 <div className='passion-label'><p>Photography</p></div>
                             </a>
-                            {props.style = {'--width' : `${itemBalanceWidthCalculator("passion-box-layout")}%`}}
+                            {/* <a className='passion-box-layout' href='#'></a>  */}
+
                         </div>
                         <div className='passion-text'>
-                            Testing Testing  123
+                            <p className='passion-text-p'>
+                            Welcome to my portfolio website! Here, you'll find the perfect blend of my four passions: coding, engineering, photography, and trading. Through coding, I bring ideas to life and solve complex problems. Engineering bridges imagination with practicality, allowing me to create lasting structures and technologies. Photography freezes moments and shares unique perspectives. Trading offers an exhilarating world of numbers and patterns. Explore my projects and witness the fusion of these passions. Let's inspire and leave a lasting impact together. Enjoy your visit!
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -72,3 +76,5 @@ function Second(props) {
     }
 }
 export default Second;
+
+
