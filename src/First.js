@@ -10,48 +10,27 @@ import TechStack from './TechStack.js';
 import './App.css';
 
 function First(props) {
-        let isSmall = props.isMobile;
+    let isSmall = props.isMobile;
     console.log(`Printing from navbar -- Value of isSmall: ${isSmall}`);
-    if(!isSmall) {
-        return (
-            <section className='first-sectional'>
-                <Navigation/>
-                <div className='first-item-box'>
-                    <div className='first-sectional-container'>
-                        <div className='photo-flex'>
-                            <img className='photo-selfie' src={greetingPhoto} alt=""></img>
-                        </div>
-                        <div className='greeting-flex'>
-                            <div className='greetings-box'>
-                                <h1>Aeydran<br/><i>Software Engineer</i></h1>
-                                <p>Born and raised here in NYC.<br/>I am an intuitive problem solver always looking for the next mountain.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <TechStack/>
-                </div>
-            </section>
-        );
-    }
-    else {
-        return(
-            <section className='first-sectional'>
+    return (
+        <section className='first-sectional'>
+            <Navigation isMobile={isSmall} />
+            <div className='first-item-box'>
                 <div className='first-sectional-container'>
                     <div className='photo-flex'>
                         <img className='photo-selfie' src={greetingPhoto} alt=""></img>
                     </div>
                     <div className='greeting-flex'>
                         <div className='greetings-box'>
-                            <h1>Aeydran</h1>
-                            <h2>N.Y.C</h2>
-                            <h2>Software Engineer</h2>
+                            <h1>Aeydran<br/><i>Software Engineer</i></h1>
+                            <p>Born and raised here in NYC.<br/>I am an intuitive problem solver always looking for the next mountain.</p>
                         </div>
                     </div>
                 </div>
-            </section>
-        );
-    }   
-    
+                <TechStack/>
+            </div>
+        </section>
+    );
     
 }
 
