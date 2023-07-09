@@ -1,28 +1,27 @@
 import './App.css';
 import React from 'react';
+import tradingAi from './assets/trading-ai.webp';
+import dataAi from './assets/data-ai.png';
+
 
 function Third(props){
     return(
         <section className='third-sectional'>
             <div className='third-sectional-container'>
                 <h2>Projects</h2>
-                
                 <div className='projects-links'>
                     <div className='projects-text'>
                         <p className='projects-text-p'>
-                        Welcome to my portfolio website! Here, you'll find the perfect blend of my four passions: coding, engineering, photography, and trading.
-                        Through coding, I bring ideas to life and solve complex problems. Engineering bridges imagination with practicality, allowing me to create lasting structures and technologies.
-                        Photography freezes moments and shares unique perspectives. Trading offers an exhilarating world of numbers and patterns.
-                        Explore my projects and witness the fusion of these passions. Let's inspire and leave a lasting impact together. Enjoy your visit!
+                        I have undertaken exciting projects that have allowed me to showcase my skills and passion for innovative solutions. One notable project involved developing a Python-based Dogecoin trading API, which utilized moving averages for automated trading strategies. By integrating with the Robinhood API for real-time data and trade execution, I achieved successful automation, optimized algorithm performance, and validated the strategy through rigorous back-testing. Another significant project involved creating a classification AI model that analyzed a CSV dataset to predict cancer presence based on various patient attributes. Through data preprocessing, feature engineering, and machine learning techniques, I trained the model to accurately classify individuals, demonstrating my proficiency in leveraging AI for valuable insights. These projects highlight my dedication to pushing boundaries, leveraging cutting-edge technologies, and delivering impactful solutions.
                         </p>
                     </div>
                     <div className='collective-projects-flex-container'>
                         <a href='#' className='projects-box-layout'>
-                            <img className='projects-image' src='https://media.giphy.com/media/1569RvwRjejO2IcueA/giphy-downsized-large.gif'></img>
+                            <img className='projects-image' src={tradingAi}></img>
                             <div className='projects-label'><p>Trading</p></div>
                         </a>
                         <a className='projects-box-layout'href='#'>
-                            <img className='projects-image' src='https://media.giphy.com/media/1569RvwRjejO2IcueA/giphy-downsized-large.gif'></img>
+                            <img className='projects-image' src={dataAi}></img>
                             <div className='projects-label'><p>Coding</p></div>
                         </a>
                     </div>

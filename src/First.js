@@ -14,20 +14,22 @@ function First(props) {
     console.log(`Printing from navbar -- Value of isSmall: ${isSmall}`);
     return (
         <section className='first-sectional'>
-            <Navigation isMobile={isSmall} />
-            <div className='first-item-box'>
-                <div className='first-sectional-container'>
-                    <div className='photo-flex'>
-                        <img className='photo-selfie' src={greetingPhoto} alt=""></img>
-                    </div>
-                    <div className='greeting-flex'>
-                        <div className='greetings-box'>
-                            <h1>Aeydran<br/><i>Software Engineer</i></h1>
-                            <p>Born and raised here in NYC.<br/>I am an intuitive problem solver always looking for the next mountain.</p>
+            <div className='first-sectional-container'>
+                <Navigation isMobile={isSmall} />
+                <div className='home-container'>
+                    <div className='home-info-container'>
+                        <div className='photo-flex'>
+                            <img className='photo-selfie' src={greetingPhoto} alt=""></img>
+                        </div>
+                        <div className='greeting-flex'>
+                            <div className='greetings-box'>
+                                <h1>Aeydran<br/><i>Software Engineer</i></h1>
+                                <p>Born and raised here in NYC.<br/>I am an intuitive problem solver always looking for the next mountain.</p>
+                            </div>
                         </div>
                     </div>
+                    <TechStack/>
                 </div>
-                <TechStack/>
             </div>
         </section>
     );
