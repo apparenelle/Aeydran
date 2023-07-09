@@ -3,9 +3,9 @@ import React, { useState, useEffect, useRef } from 'react';
 
 import First from './First.js';
 import Second from './Second.js';
-import {Third} from './Third.js';
-import {Fourth} from './Fourth.js';
-import {Footer} from './Footer.js';
+import Third from './Third.js';
+import Fourth from './Fourth.js';
+import Footer from './Footer.js';
 
 import './App.css';
 // import './Tablet.css';
@@ -61,7 +61,7 @@ function App() {
       <Third isMobile={mobileState}/>
       <Fourth isMobile={mobileState}/>
       <Footer isMobile={mobileState}/>
-      </div>
+    </div>
   );
 }
 
