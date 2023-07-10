@@ -29,7 +29,6 @@ html,body {
     color: var(--primaryColor)
 }
 
-@media  {
 
 /*------------------------------------------------------------------*/
 
@@ -52,6 +51,15 @@ html,body {
 .container-nav{
     display: flex;
     flex-direction: row;
+    
+    @media (max-width: 1025px){
+        width: 100%;
+        height: 5rem;
+        margin: 2rem 2rem 0px 0px;
+        justify-content: flex-end;
+        align-items: center;
+
+    }
 }
 .navigation-links{
     color: var(--white);
@@ -77,7 +85,8 @@ html,body {
     display: flex;
     width: 100%;
     flex-direction: column;
-    /* margin: auto; */
+
+    
 }
 .home-info-container {
     display: flex;
@@ -86,6 +95,11 @@ html,body {
     min-width: fit-content;
     align-self: center;
     justify-self: center;
+
+    @media (max-width: 1025px) {
+        flex-direction: column;
+        align-items: center;   
+    }
 }
 
 
@@ -96,19 +110,24 @@ html,body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin: auto;
     overflow: visible;
-    padding-right: 30px;
+    /* padding-right: 30px; */
+
 }
 .photo-selfie{
-    width:  95%;
+    width:  100%;
     max-width: 600px;
     max-height: 900px;
-    min-width: 500px;
+    /* min-width: 500px; */
     height: 70%;
+    
+    @media (max-width: 1025px) {
+        height: auto;
+    }
     
 }
 .greeting-flex{
-    width: 40%;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -316,7 +335,7 @@ html,body {
 }
 .projects-text-p{
     padding: 7%;
-    font-size: min(22px,2vw);;
+    font-size: min(22px,2vw);
 }
 /* End of Third Sectional */
 /*------------------------------------------------------------------*/
@@ -410,34 +429,65 @@ html,body {
     text-decoration: none;
     color: white;
 }    
-}
 /*------------------------------------------------------------------*/
-/* saving this color Honeydew: #F0FFF0 */
-
-
-
-    /* Adjustments to primary css flags */
-    /* .first-sectional-container {
+@media (max-width: 1025px){
+    .mobile-sandwich{
+        height: 80%;
         display: flex;
-        flex-direction: row;
-        width: 95vw;
-    }
-    .greeting-flex h1{
-        font-size: 6vw;
-    }
-    .greeting-flex h2{
-        font-size: 4vw;
+        flex-direction: column;
+        margin-right: 5vw;
+        align-items: center;
+        justify-content: center;
     }
 
-
-
-
-
-    .experience-image {
+    .mobile-sandwich-1,
+    .mobile-sandwich-2,
+    .mobile-sandwich-3 {/*Adjust sandwich stats to match 600px to 1024*/
+        /* Creates the sandwich stats */
+        width: 3.5rem;
+        height: .5rem;
+        background-color: #FFFFFF;
+        margin: 0.35rem;
+        transition: 0.4s;
+    }
+    .change .mobile-sandwich-1 {
+        transform: translate(0, 1.2em) rotate(-45deg);
+    }
+    .change .mobile-sandwich-2 {
+        opacity: 0;
+    }
+    .change .mobile-sandwich-3 {
+        transform: translate(0,-1.2em) rotate(45deg);
+    }
+    .overlay{
+        height: 100%;
+        width: 0;
+        position: fixed; 
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        background-color: rgb(0,0,0); /* Black fallback color */
+        background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+        overflow-x: hidden; 
+        transition: 0.5s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .overlay-content{
+        position: relative;
         width: 100%;
-        height: 25%;
-        border-radius: .5rem;
-        object-fit: cover;
-      } */
-/* } */
- 
+        text-align: center; 
+        display: flex;
+        flex-direction: column;
+    }
+    .overlay-content a:hover {
+        color: var(--primaryColor);
+    }
+    .overlay-content a {
+        color: white;
+        text-decoration: none;
+        padding: 4vw;
+        font-size: 2.5vw;
+    }
+}

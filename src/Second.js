@@ -3,10 +3,7 @@ import React from 'react';
 
 import {itemBalanceWidthCalculator} from './Scripts';
 
-
 function Second(props) {
-    // itemBalanceWidthCalculator("passion-box-layout");
-    if(props.isMobile == false) {
         return(
             <section className='second-sectional'>
                 <div className='second-sectional-container'>
@@ -43,8 +40,8 @@ function Second(props) {
                 </div>
             </section>
         );
-    }
 }
+
 export default Second;
 
 
