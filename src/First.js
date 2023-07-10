@@ -14,8 +14,9 @@ function First(props) {
     console.log(`Printing from navbar -- Value of isSmall: ${isSmall}`);
     return (
         <section className='first-sectional'>
-            <div className='first-sectional-container'>
                 <Navigation isMobile={isSmall} />
+            
+            <div className='first-sectional-container'>
                 <div className='home-container'>
                     <div className='home-info-container'>
                         <div className='photo-flex'>
