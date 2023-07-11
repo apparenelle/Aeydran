@@ -1,24 +1,40 @@
-import './App.css';
-import React from 'react';
+//import all images and documents and us js to call them.
+import React, { useEffect } from 'react';
+import { NewsLetter } from './News.js';
+import { Sandwich } from './Sandwich';
+import { OverlayNav } from './OverlayNav';
+import Navigation from './Navigation.js';
 import greetingPhoto from './assets/gerald.png';
+import TechStack from './TechStack.js';
 
-export class First extends React.Component {
-    render(){
-        return (
-            <div className='first-sectional'>
-                <div className='first-sectional-container'>
-                    <div className='photo-flex'>
-                        <img className='photo-selfie' src={greetingPhoto} alt=""></img>
+import './App.css';
+
+function First(props) {
+    let isSmall = props.isMobile;
+    console.log(`Printing from navbar -- Value of isSmall: ${isSmall}`);
+    return (
+        <section className='first-sectional'>
+                <Navigation isMobile={props.isMobile} />
+            
+            <div className='first-sectional-container'>
+                <div className='home-container'>
+                    <div className='home-info-container'>
+                        <div className='photo-flex'>
+                            <img className='photo-selfie' src={greetingPhoto} alt=""></img>
+                        </div>
+                        <div className='greeting-flex'>
+                            <div className='greetings-box'>
+                                <h1>Aeydran<br/><i>Software Engineer</i></h1>
+                                <p>Born and raised here in NYC.<br/>I am an intuitive problem solver always looking for the next mountain.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div className='greeting-flex'>
-                        <h1>Aeydran</h1>
-                        <h2>N.Y.C</h2>
-                        <h2>Software Engineer</h2>
-                        {/* <h2>"Believe you can and you're halfway there."</h2> */}
-                    </div>
+                    <TechStack/>
                 </div>
             </div>
-        );
-    }
+        </section>
+    );
+    
 }
 
+export default First;

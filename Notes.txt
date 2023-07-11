@@ -1,0 +1,13 @@
+https://www.linkedin.com/learning/learning-3d-graphics-on-the-web-with-three-js/dat-gui?u=74653506
+Dat GUI --- link from linkedin explaining it.
+- supposed to be GUI for three js and allowing user to interact with canvas
+
+https://www.tutorialspoint.com/threejs/threejs_responsive_design.htm
+Three.js notes
+- for assisting in the implementation of three.js canvas on main webpage
+
+https://dev.to/ranjan/snap-scroll-in-react-in-less-than-a-minute-11oe
+react-use-scroll-snap
+- react library specifically for setting up scroll snap ( traditional scroll snapping using just css did not work. )
+
+fyi --- gap is only good for seperating columns or rows not individual items instead use margin also setting margin to auto will center the object.

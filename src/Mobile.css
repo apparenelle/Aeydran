@@ -10,7 +10,7 @@
         flex-direction: row;
         background-color: #683B2B;
     }
-    .nav-logo-flex-container {
+    .nav-logo-container {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -18,7 +18,7 @@
         height: fit-content;
     
     }
-    .nav-logo-flex-container h4{
+    .nav-logo-container h4{
         color: white;
     }
     .nav-flex-container ul{
@@ -368,10 +368,10 @@
         /* position: fixed; */
         /* overflow: ; */
     }
-    .nav-logo-flex-container{
+    .nav-logo-container{
         width: fit-content;
     }
-    .nav-logo-flex-container h4{/*Come back to this to resolve extra space issue*/
+    .nav-logo-container h4{/*Come back to this to resolve extra space issue*/
         color: white;
         font-size: 5vw;
         padding-left: 12vw;
