@@ -15,8 +15,6 @@
     --width: 40%; /* default*/
 }
 
-
-
 html,body {
     width: 100vw;
     background-color: var(--tertiaryColor);
@@ -60,6 +58,14 @@ html,body {
         align-items: center;
 
     }
+    @media (max-width: 390px){
+        /* width: 100%; */
+        height: 4rem;
+        margin: 1.5rem 1.5rem 0px 0px;
+        justify-content: flex-end;
+        align-items: center;
+
+    }
 }
 .navigation-links{
     color: var(--white);
@@ -91,7 +97,6 @@ html,body {
 .home-info-container {
     display: flex;
     flex-direction: row;
-    /* width: min(70vw,150rem); */
     min-width: fit-content;
     align-self: center;
     justify-self: center;
@@ -114,6 +119,10 @@ html,body {
     overflow: visible;
     /* padding-right: 30px; */
 
+    @media (max-width: 1025px) {
+        width: auto;
+    }
+
 }
 .photo-selfie{
     width:  100%;
@@ -124,6 +133,9 @@ html,body {
     
     @media (max-width: 1025px) {
         height: auto;
+    }
+    @media (max-width: 390px) {
+        width: 95%;
     }
     
 }
@@ -144,15 +156,29 @@ html,body {
     margin: 5vh;
     color: #FFFFFF;
     white-space: nowrap; /*Stops line from breaking*/
+
+    @media (max-width: 390px) {
+        /* font-siz: .8rem; */
+        white-space: pre-wrap;
+    }
 }
 .greetings-box i{
     color: var(--primaryColor);
 }
 .greeting-flex h1{
     font-size: 2.75em;
+
+    @media (max-width: 390px) {
+        font-size: 1.5rem;
+    }
 }
-.greeting-flex h2{
+.greeting-box p{
     font-size: 1.5em;
+    
+    @media (max-width: 390px) {
+        font-size: .8rem;
+        width: 60%;
+    }
 }
 .tech-stack-container{
     display: flex;
@@ -198,13 +224,22 @@ html,body {
 .second-sectional-container h2{
     /* font-size: 2.75vh; */
     color: var(--white);
-    font-size: max(2.25vh,2.75em);
+    font-size: max(2.25vw,1.75em);
     margin-bottom: 2.5vh;
+
+    @media (max-width: 390px){
+        
+    }
 }
 .passion-links{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
 
+    @media (max-width: 390px) {
+        flex-direction: column;
+    }
 }
 
 .collective-passions-flex-container{
@@ -216,6 +251,10 @@ html,body {
     flex-wrap: wrap;
     justify-content: center;
     /* align-items: center; */
+
+    @media (max-width: 390px){
+        width: 85%
+    }
 }
 .passion-box-layout{
     /* This is the anchor */
@@ -248,10 +287,20 @@ html,body {
     color: white;
     width: 50%;
     font-size: 1.85em;
+    
+    @media (max-width: 390px){
+        width: 90%;
+    }
 }
 .passion-text-p{
     padding: 7%;
     font-size: min(22px,2vw);
+
+    @media (max-width: 390px){
+        font-size: .8rem;
+        text-align: left;
+
+    }
    
 }
 
@@ -283,12 +332,16 @@ html,body {
 }
 .third-sectional-container h2{
     color: var(--white);
-    font-size: max(2.25vh,2.75em);
+    font-size: max(2.25vw,1.75em);
     margin-bottom: 2.5vh;
 }
 .projects-links{
     display: flex;
     flex-direction: row;
+
+    @media (max-width: 390px) {
+        flex-direction: column-reverse;
+    }
 
 }
 
@@ -301,20 +354,35 @@ html,body {
     flex-wrap: wrap;
     justify-content: center;
     /* align-items: center; */
+
+    @media (max-width: 1025px){
+        flex-direction: column;
+        align-items: center;
+        margin-right: 4%;
+    }
+    @media (max-width: 390px){
+        width: 100%;
+    }
 }
 .projects-box-layout{
     /* This is the anchor */
     display: flex;
     width: var(--width);
     height: auto;
-    /* flex-grow: ; */
     margin: 1%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     color: black;
-    /* object-fit: cover; */
+    object-fit: cover;
+
+    @media (max-width: 1025px){
+        width: 85%;
+    }
+    @media (max-width: 390px){
+        width: 65%;
+    }
 }
 .projects-image{
     width: 100%;
@@ -332,10 +400,32 @@ html,body {
     color: white;
     width: 50%;
     font-size: 1.85em;
+    @media (max-width: 1025px){
+        padding: 7%;
+        font-size: 1rem;
+        text-align: left;
+
+    }
+    @media (max-width: 390px){
+        width: 90%;
+    }
 }
+
 .projects-text-p{
     padding: 7%;
     font-size: min(22px,2vw);
+    
+    @media (max-width: 1025px){
+        padding: 7%;
+        font-size: 1rem;
+        text-align: left;
+
+    }
+    @media (max-width: 390px){
+        font-size: .8rem;
+        text-align: left;
+
+    }
 }
 /* End of Third Sectional */
 /*------------------------------------------------------------------*/
@@ -358,41 +448,71 @@ html,body {
     justify-content: center;
     width: 100%;
     max-width: 1500px;
+
+    @media (max-width: 1025px) {
+        width: 90%;
+    }
 }
 /* Experience category */
 .fourth-sectional-container h2{
-    font-size: max(2.25vh,2.75em);
+    font-size: max(2.25vh, 1.75em);
 }
 .experience-links{
     display: flex;
     flex-direction: row;
-    gap: 3vw;
-    width: 95%;
-    height: 45%;
     align-items: center;
     justify-content: center;
-    /* flex-wrap: nowrap; */
+    width: 95%;
+
+    @media (max-width: 390px) {
+        /* flex-direction: row; */
+        flex-wrap: wrap;
+    }
 }
 .experience-items-flex-container{
     display: flex;
-    width: 30%;
-    /* height: 40vh; */
+    width: 22%;
+    margin: 0% 1% 0%;
     flex-direction: column;
     color: white;
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
 
+    @media (max-width: 390px){
+        width: 40%;
+        /* flex-direction: row; */
+        flex-wrap: wrap;
+        margin: 3%
+    }
 
+    
 }
 .experience-image {
     width: 100%;
     aspect-ratio: 16/16;
     border-radius: .5rem;
+    object-fit: fill;
+
   }
+  .experience-text p {
+    padding: 7%;
+    font-size: min(22px,2vw);
+
+    @media (max-width: 390px){
+        font-size: .8rem;
+        text-align: left;
+
+    }
+   
+}
 .experience-label{
     font-size: 2vh;
     font-weight: 500;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
 }
 /*------------------------------------------------------------------*/
 
@@ -429,6 +549,9 @@ html,body {
     text-decoration: none;
     color: white;
 }    
+.footer-links-flex a:hover{
+    color: var(--primaryColor);
+}    
 /*------------------------------------------------------------------*/
 @media (max-width: 1025px){
     .mobile-sandwich{
@@ -449,15 +572,27 @@ html,body {
         background-color: #FFFFFF;
         margin: 0.35rem;
         transition: 0.4s;
+
+        @media (max-width: 390px) {
+            width: 3rem;
+        }
     }
     .change .mobile-sandwich-1 {
         transform: translate(0, 1.2em) rotate(-45deg);
+        
+        @media (max-width: 390px) {
+            transform: translate(0, 1.1em) rotate(-45deg);
+        }
     }
     .change .mobile-sandwich-2 {
         opacity: 0;
     }
     .change .mobile-sandwich-3 {
         transform: translate(0,-1.2em) rotate(45deg);
+        
+        @media (max-width: 390px) {
+            transform: translate(0, -1.1em) rotate(45deg);
+        }
     }
     .overlay{
         height: 100%;
