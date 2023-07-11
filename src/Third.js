@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import tradingAi from './assets/trading-ai.webp';
+import tradingAi from './assets/crypto-trading.jpg';
 import dataAi from './assets/data-ai.png';
 
 
