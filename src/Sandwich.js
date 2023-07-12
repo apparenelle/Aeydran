@@ -6,7 +6,7 @@ export function Sandwich() {
 
     function sandwichDance() {
         let x = document.getElementById("mobile-sandwich");
-        if (typeof x !== "undefined") {
+        if (typeof x != "undefined") {
             if (mobileNavIsOpen!=true) {
                 x.classList.toggle("change");
                 setMobileNavState(true);
