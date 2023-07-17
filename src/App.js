@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 
-import First from './First.js';
-import Second from './Second.js';
-import Third from './Third.js';
-import Fourth from './Fourth.js';
-import Footer from './Footer.js';
+import First from './components/First/First.js';
+import Second from './components/Second/Second.js';
+import Third from './components/Third/Third.js';
+import Fourth from './components/Fourth/Fourth.js';
+import Footer from './components/Footer/Footer.js';
 
 import './App.css';
 // import './Tablet.css';
