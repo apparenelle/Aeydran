@@ -17,6 +17,7 @@
 
 html,body {
     width: 100vw;
+    font-size: 20px;
     background-color: var(--tertiaryColor);
     font-family: Open-Sans;
     overflow-x: hidden; 
