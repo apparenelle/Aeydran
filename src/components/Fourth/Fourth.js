@@ -19,7 +19,7 @@ function Fourth(props) {
                     </div>
                     <div className='experience-items-flex-container'>
                         <img className='experience-image' src={bayernlbJobLogo}></img>
-                        <div className='experience-label'><p>Bayerische LandesBank</p></div>
+                        <div className='experience-label'><p>BayernLB</p></div>
                     </div>
                     <div className='experience-items-flex-container'>
                         <img className='experience-image' src={anaDataJobLogo}></img>
