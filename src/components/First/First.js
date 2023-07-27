@@ -12,30 +12,53 @@ import './First.Stylesheet.css';
 
 function First(props) {
     let isSmall = props.isMobile;
-    console.log(`Printing from navbar -- Value of isSmall: ${isSmall}`);
-    return (
-        <section className='first-sectional'>
-                <Navigation isMobile={props.isMobile} />
-            
-            <div className='first-sectional-container'>
-                <div className='home-container'>
-                    <div className='home-info-container'>
-                        <div className='photo-flex'>
-                            <img className='photo-selfie' src={greetingPhoto} alt=""></img>
-                        </div>
-                        <div className='greetings-flex'>
-                            <div className='greetings-box'>
-                                <h1>Aeydran<br/><i>Software Engineer</i></h1>
-                                <div>Born and raised here in NYC.<br/>I am an intuitive problem solver<br/> always looking for the next mountain.</div>
-                            </div>
+    let pcPage = <section className='first-sectional'>
+        <Navigation isMobile={props.isMobile} />
+        <div className='first-sectional-container'>
+            <div className='home-container'>
+                <div className='home-info-container'>
+                    <div className='photo-flex'>
+                        <img className='photo-selfie' src={greetingPhoto} alt=""></img>
+                    </div>
+                    <div className='greetings-flex'>
+                        <div className='greetings-box'>
+                            <h1>Aeydran<br/><i>Software Engineer</i></h1>
+                            <div>Born and raised here in NYC.<br/>I am an intuitive problem solver<br/> always looking for the next mountain.</div>
                         </div>
                     </div>
-                    <TechStack/>
                 </div>
+                <TechStack/>
             </div>
-        </section>
-    );
+        </div>
+        </section>;
     
+    let mobilePage = <section className='first-sectional'>
+        <Navigation isMobile={props.isMobile} />
+        <div className='first-sectional-container'>
+            <div className='home-container'>
+                <div className='home-info-container'>
+                    <div className='photo-flex'>
+                        <img className='photo-selfie' src={greetingPhoto} alt=""></img>
+                    </div>
+                    <div className='greetings-flex'>
+                        <div className='greetings-box'>
+                            <h1>Aeydran<br/><i>Software Engineer</i></h1>
+                        </div>
+                    </div>
+                </div>
+                <TechStack/>
+            </div>
+        </div>
+        </section>;
+    
+    
+    
+    console.log(`Printing from navbar -- Value of isSmall: ${isSmall}`);
+    if (props.isMobile) {
+        return (mobilePage) ;
+    }
+    else{
+        return(pcPage);
+    }    
 }
-
 export default First;

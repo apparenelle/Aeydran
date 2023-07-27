@@ -118,17 +118,17 @@
     padding: 7%;
     font-size: min(22px,2vw);
 }
-@media (max-width: 1025px){
-    .projects-text-p{
-        padding: 7%;
-        font-size: 1rem;
-        text-align: left;
+    @media (max-width: 1025px){
+        .projects-text-p{
+            padding: 0%;
+            font-size: .7rem;
+            text-align: left;
+        }
     }
-}
-@media (max-width: 390px){
-    .projects-text-p{
-        font-size: .8rem;
-        text-align: left;
-    }
-}
+        @media (max-width: 390px){
+            .projects-text-p{
+                font-size: .8rem;
+                text-align: left;
+            }
+        }
 /* End of Third Sectional */
