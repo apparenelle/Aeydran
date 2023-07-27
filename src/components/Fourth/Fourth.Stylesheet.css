@@ -26,6 +26,12 @@
 /* Experience category */
 .fourth-sectional-container h2{
     font-size: max(2.25vh, 1.75em);
+    margin-bottom: 15vw;
+}
+@media (max-width: 390px){
+    .fourth-sectional-container h2{
+        font-size: 1.2rem;
+    }
 }
 .experience-links{
     display: flex;
@@ -72,7 +78,7 @@
 }
 @media (max-width: 390px){
     .experience-text p {
-        font-size: .8rem;
+        font-size: .45rem;
         text-align: left;
     }
 }

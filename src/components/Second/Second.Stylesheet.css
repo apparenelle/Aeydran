@@ -28,6 +28,11 @@
     font-size: max(2.25vw,1.75em);
     margin-bottom: 2.5vh;
 }
+@media (max-width: 390px) {
+    .second-sectional-container h2{
+        font-size: 1.2rem;
+    }
+}
 .passion-links{
     display: flex;
     flex-direction: row;
@@ -100,7 +105,7 @@
 }
 @media (max-width: 390px){
     .passion-text-p{
-        font-size: .8rem;
+        font-size: .55rem;
         text-align: left;
     }
 }

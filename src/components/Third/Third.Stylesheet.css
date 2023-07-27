@@ -24,7 +24,7 @@
 }
 .third-sectional-container h2{
     color: var(--white);
-    font-size: max(2.25vw,1.75em);
+    font-size: max(2.25vw,1.2rem);
     margin-bottom: 2.5vh;
 }
 
@@ -35,14 +35,17 @@
 @media (max-width: 390px) {
     .projects-links{
         flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
     }
 }
 
 .collective-projects-flex-container{
     width: 50%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
 }
 @media (max-width: 1025px){
@@ -54,7 +57,11 @@
 }
 @media (max-width: 390px){
     .collective-projects-flex-container{
-        width: 100%;
+        width: 80%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        
+
     }
 }
 
@@ -120,14 +127,14 @@
 }
     @media (max-width: 1025px){
         .projects-text-p{
-            padding: 0%;
+            padding: 5%;
             font-size: .7rem;
             text-align: left;
         }
     }
         @media (max-width: 390px){
             .projects-text-p{
-                font-size: .8rem;
+                font-size: .5rem;
                 text-align: left;
             }
         }
