@@ -9,7 +9,7 @@ import './Navigation.Stylesheet.css'
 function Navigation(props){
     let pcPage = <div className='container-nav'>
     <a className='navigation-links'>Blog</a>
-    <a className='navigation-links'>Skills</a>
+    <a className='navigation-links' href=''>Skills</a>
     <a className='navigation-links'>Projects</a>
     <a className='navigation-links'>Contact</a>
     </div>;
