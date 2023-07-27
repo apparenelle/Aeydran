@@ -20,7 +20,7 @@
 
         
     }
-    @media (max-width: 390px) {
+    @media (max-width: 450px) {
         .mobile-sandwich-1,
         .mobile-sandwich-2,
         .mobile-sandwich-3 {
@@ -31,7 +31,7 @@
     .change .mobile-sandwich-1 {
         transform: translate(0, 1.2em) rotate(-45deg);
     }
-    @media (max-width: 390px) {
+    @media (max-width: 450px) {
         .change .mobile-sandwich-1 {
             transform: translate(0, 1.1em) rotate(-45deg);
         }
@@ -44,7 +44,7 @@
     .change .mobile-sandwich-3 {
         transform: translate(0,-1.2em) rotate(45deg);
     }
-    @media (max-width: 390px) {
+    @media (max-width: 450px) {
         .change .mobile-sandwich-3 {
             transform: translate(0, -1.1em) rotate(45deg);
         }

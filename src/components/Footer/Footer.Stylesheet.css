@@ -15,7 +15,7 @@
     /* margin-bottom: .75vw; */
     /* font-size: 1.5vh; */
 }
-@media (max-width: 390px){
+@media (max-width: 450px){
     .footer-sectional h2{
         font-size: 0.7rem;
     }
@@ -30,7 +30,7 @@
     /* height: 20%; */
 
 }
-@media (max-width: 390px){
+@media (max-width: 450px){
     .footer-links-flex{
         font-size: 0.5rem;
     }
