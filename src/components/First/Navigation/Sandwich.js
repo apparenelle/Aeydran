@@ -40,6 +40,7 @@ function openMobileNav(){
 }
 
 function closeMobileNav(){
+    
     document.getElementById("myNav").style.width = "0%";
     // document.getElementById("root").style.marginLeft = "0%";
 

@@ -14,11 +14,11 @@ function TechStack( props ){
 
     return(
         <div className='tech-stack-container'>
-            <img className='stackPng' src={reactPng}></img>
-            <img className='stackPng' src={jsPng}></img>
-            <img className='stackPng' src={pythonPng}></img>
-            <img className='stackPngSQL' src={sqlPng}></img>
-            <img className='stackPng' src={csharpPng}></img>
+            <img className='stackPng' src={reactPng} alt='react framework'></img>
+            <img className='stackPng' src={jsPng} alt='javascript'></img>
+            <img className='stackPng' src={pythonPng} alt='python'></img>
+            <img className='stackPngSQL' src={sqlPng} alt='SQL'></img>
+            <img className='stackPng' src={csharpPng} alt='c-sharp'></img>
         </div>
     );
 }

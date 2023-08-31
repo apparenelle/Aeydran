@@ -6,7 +6,7 @@ import {itemBalanceWidthCalculator} from '../../Scripts';
 
 function Second(props) {
         return(
-            <section className='second-sectional'>
+            <section className='second-sectional' id='second-sectional'>
                 <div className='second-sectional-container'>
                     <h2>Passions</h2>
                     <div className='passion-links'>

@@ -21,9 +21,9 @@ html,body {
     font-size: 20px;
     background-color: var(--tertiaryColor);
     font-family: Open-Sans;
-    font-size: 20px;    
-    overflow-x: hidden; 
+    overflow: auto;
     letter-spacing: .140rem;
+    scroll-behavior: smooth;
     
 }
 #highlight{
