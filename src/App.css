@@ -8,6 +8,7 @@
 
 }
 :root {
+    /*Color Schema */
     --primaryColor: #7b5fc7;
     --secondaryColor: #000000;
     --tertiaryColor: #39383d;
@@ -20,9 +21,9 @@ html,body {
     font-size: 20px;
     background-color: var(--tertiaryColor);
     font-family: Open-Sans;
-    font-size: 20px;    
-    overflow-x: hidden; 
-    letter-spacing: .175rem;
+    overflow: auto;
+    letter-spacing: .140rem;
+    scroll-behavior: smooth;
     
 }
 #highlight{

@@ -11,3 +11,7 @@ react-use-scroll-snap
 - react library specifically for setting up scroll snap ( traditional scroll snapping using just css did not work. )
 
 fyi --- gap is only good for seperating columns or rows not individual items instead use margin also setting margin to auto will center the object.
+
+
+npm install three @react-three/drei
+npm install three @react-three/fiber

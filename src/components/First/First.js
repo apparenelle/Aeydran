@@ -6,6 +6,7 @@ import { OverlayNav } from './Navigation/OverlayNav.js';
 import Navigation from './Navigation/Navigation.js';
 import greetingPhoto from '../../assets/gerald.png';
 import TechStack from './TechStack.js';
+import ThreeD from '../../ThreeD.js';
 
 // import './App.css';
 import './First.Stylesheet.css';
@@ -18,7 +19,7 @@ function First(props) {
             <div className='home-container'>
                 <div className='home-info-container'>
                     <div className='photo-flex'>
-                        <img className='photo-selfie' src={greetingPhoto} alt=""></img>
+                        <ThreeD nScale={1}/>
                     </div>
                     <div className='greetings-flex'>
                         <div className='greetings-box'>
@@ -38,7 +39,7 @@ function First(props) {
             <div className='home-container'>
                 <div className='home-info-container'>
                     <div className='photo-flex'>
-                        <img className='photo-selfie' src={greetingPhoto} alt=""></img>
+                        <ThreeD  nScale={1.2}/>
                     </div>
                     <div className='greetings-flex'>
                         <div className='greetings-box'>
