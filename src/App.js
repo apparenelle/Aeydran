@@ -8,9 +8,7 @@ import Fourth from './components/Fourth/Fourth.js';
 import Footer from './components/Footer/Footer.js';
 
 import './App.css';
-// import './Tablet.css';
-// import './Mobile.css';
-import './fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf'
+// import './fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf'
 
 
 
@@ -26,10 +24,10 @@ function App() {
     isMobile = false;
   }
 
-  //use State could go here
   const [mobileState, setIsMobile] = useState(isMobile);
 
-  console.log(`This is initial width: ${windowWidth}px. Mobile: ${isMobile}.`);
+  // Troubleshooting whether in mobile mode or not.
+  // console.log(`This is initial width: ${windowWidth}px. Mobile: ${isMobile}.`);
 
 
   useEffect(() => {
@@ -45,13 +43,9 @@ function App() {
       }
       console.log(`Window width is ${windowWidth}px. Are we in mobile mode: ${isMobile}.`); 
       setIsMobile(isMobile);
-      // sleep(500);  //only use to slow down in production if necessary
     });
-    // passionFlexWidth = itemBalanceWidthCalculator("passion-box-layout");
   }, [windowWidth, isMobile]);
 
-  // const scrollRef = useRef(null);
-  // useScrollSnap({ ref:scrollRef, duration:2, delay: 0});
 
 
   return ( 
@@ -65,14 +59,4 @@ function App() {
   );
 }
 
-function sleep(ms) {
-  // console.log("I slept"); works -- supposed to slow down render calls
-  // use just in case too many calls are occuring
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
-
 export default App;
-// ref={scrollRef}
-
-
-// style={{'--width' : `${passionFlexWidth}%`}}

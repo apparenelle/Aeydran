@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-
-
 import './index.css';
 import App from './App';
+
 // import './fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth,wght.ttf'
 import reportWebVitals from './reportWebVitals';
 
