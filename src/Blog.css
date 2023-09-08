@@ -1,0 +1,21 @@
+.main-window {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (max-width: 1025px){
+    .nav-section{
+        align-self: flex-end;
+    }
+}
+
+.item-section-1 {
+    background-color: grey;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    border-radius: 1em;
+    margin-top: 4rem;
+}

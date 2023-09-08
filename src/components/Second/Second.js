@@ -2,7 +2,6 @@
 import './Second.Stylesheet.css'
 import React from 'react';
 
-import {itemBalanceWidthCalculator} from '../../Scripts';
 
 function Second(props) {
         return(

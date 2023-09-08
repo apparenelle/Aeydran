@@ -7,6 +7,8 @@ import Third from './components/Third/Third.js';
 import Fourth from './components/Fourth/Fourth.js';
 import Footer from './components/Footer/Footer.js';
 
+import Blog from './Blog.js';
+
 import './App.css';
 
 
@@ -59,11 +61,16 @@ function App() {
               <Outlet />
             </div>}>
           </Route>
+            <Route path='blog' element={
+              <>
+                <div className='App' id='app'>
+                  <Blog isMobile={mobileState} />
+                  <Outlet />
+                </div>
+              </>
+            } />
 
-            <Route path='blog' element={null} />
-            {/* <Route path='skills' element={<Second isMobile={mobileState}/>} />             */}
-            {/* <Route path='projects' element={<Third isMobile={mobileState}/>} /> */}
-            {/* <Route path='contact' element={<Footer isMobile={mobileState}/>} /> */}
+
         </Routes>
       </BrowserRouter>
   );

@@ -13,19 +13,25 @@
     .mobile-sandwich-3 {/*Adjust sandwich stats to match 600px to 1024*/
         /* Creates the sandwich stats */
         width: 2.5rem;
-        height: .5rem;
+        height: .25rem;
         background-color: #FFFFFF;
         margin: 0.5rem;
         transition: 0.4s;
 
         
     }
-    @media (max-width: 450px) {
+    @media (max-width: 769px) {
         .mobile-sandwich-1,
         .mobile-sandwich-2,
         .mobile-sandwich-3 {
-            width: 2.5rem;
-            margin: 0.42rem;
+            margin: 0.48rem;
+        }
+    }
+    @media (max-width: 426px) {
+        .mobile-sandwich-1,
+        .mobile-sandwich-2,
+        .mobile-sandwich-3 {
+            margin: 0.45rem;
         }
     }
 

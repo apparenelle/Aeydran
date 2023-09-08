@@ -1,8 +1,12 @@
 import './Navigation.Stylesheet.css';
 import React, {useState} from 'react';
 
-export function Sandwich() {
+import OverlayNav from '../Navigation/OverlayNav'
+
+export function Sandwich(props) {
     let [mobileNavIsOpen, setMobileNavState] = useState(false);
+    const [sandwichIsCrossed, setSandwichToCross] = useState(false)
+
 
     function sandwichDance() {
         let x = document.getElementById("mobile-sandwich");
@@ -11,20 +15,26 @@ export function Sandwich() {
                 x.classList.toggle("change");
                 setMobileNavState(true);
                 openMobileNav();
+                setSandwichToCross(!sandwichIsCrossed);
             }
             else {
                 x.classList.toggle("change");
                 setMobileNavState(false);
                 closeMobileNav();
+                // setSandwichToCross(!sandwichIsCrossed);
             }   
         }
     }
     return(
-        <div className='mobile-sandwich' id="mobile-sandwich" onClick={() => sandwichDance()}>
-            <div className='mobile-sandwich-1'></div>
-            <div className='mobile-sandwich-2'></div>
-            <div className='mobile-sandwich-3'></div>
-        </div>             
+        <>
+            <div className='mobile-sandwich' id="mobile-sandwich" onClick={() => { sandwichDance();}}>
+                <div className='mobile-sandwich-1'></div>
+                <div className='mobile-sandwich-2'></div>
+                <div className='mobile-sandwich-3'></div>
+            </div> 
+            <OverlayNav isCrossed={sandwichIsCrossed} />
+
+        </>           
     );   
 }
 

@@ -1,10 +1,6 @@
 //import all images and documents and us js to call them.
 import React, { useEffect } from 'react';
-import { NewsLetter } from '../../News.js';
-import { Sandwich } from './Navigation/Sandwich.js';
-import { OverlayNav } from './Navigation/OverlayNav.js';
 import Navigation from './Navigation/Navigation.js';
-import greetingPhoto from '../../assets/gerald.png';
 import TechStack from './TechStack.js';
 import ThreeD from '../../ThreeD.js';
 
