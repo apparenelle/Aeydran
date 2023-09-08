@@ -1,11 +1,13 @@
 import './Navigation.Stylesheet.css';
-import React, {useState} from 'react';
 
-import OverlayNav from '../Navigation/OverlayNav'
+import { React, useState } from 'react';
+
+import { Outlet, Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
+
 
 export function Sandwich(props) {
     let [mobileNavIsOpen, setMobileNavState] = useState(false);
-    const [sandwichIsCrossed, setSandwichToCross] = useState(false)
 
 
     function sandwichDance() {
@@ -15,13 +17,11 @@ export function Sandwich(props) {
                 x.classList.toggle("change");
                 setMobileNavState(true);
                 openMobileNav();
-                setSandwichToCross(!sandwichIsCrossed);
             }
             else {
                 x.classList.toggle("change");
                 setMobileNavState(false);
                 closeMobileNav();
-                // setSandwichToCross(!sandwichIsCrossed);
             }   
         }
     }
@@ -32,7 +32,15 @@ export function Sandwich(props) {
                 <div className='mobile-sandwich-2'></div>
                 <div className='mobile-sandwich-3'></div>
             </div> 
-            <OverlayNav isCrossed={sandwichIsCrossed} />
+            <div className="overlay" id='myNav'>
+                <div  className="overlay-content">
+                    <HashLink onClick={() => { sandwichDance();}} to='/blog' className='navigation-links'>Blog</HashLink>
+                    <HashLink onClick={() => { sandwichDance();}} to='/#second-sectional' className='navigation-links'>Skills</HashLink>
+                    <HashLink onClick={() => { sandwichDance();}} to='/#third-sectional' className='navigation-links'>Projects</HashLink>
+                    <HashLink onClick={() => { sandwichDance();}} to='/#footer-sectional' className='navigation-links'>Contact</HashLink>
+                    <Outlet/>
+                </div>
+            </div>
 
         </>           
     );   
