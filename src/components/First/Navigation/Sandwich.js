@@ -12,14 +12,18 @@ export function Sandwich(props) {
 
     function sandwichDance() {
         let x = document.getElementById("mobile-sandwich");
+        let y = document.getElementById("app");
+        
         if (typeof x !== "undefined") {
             if (mobileNavIsOpen!==true) {
                 x.classList.toggle("change");
+                y.classList.toggle("change");
                 setMobileNavState(true);
                 openMobileNav();
             }
             else {
                 x.classList.toggle("change");
+                y.classList.toggle("change");
                 setMobileNavState(false);
                 closeMobileNav();
             }   

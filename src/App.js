@@ -1,6 +1,7 @@
 import React, { useState, useEffect, } from 'react';
 import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
 
+import Navigation from './components/First/Navigation/Navigation.js';
 import First from './components/First/First.js';
 import Second from './components/Second/Second.js';
 import Third from './components/Third/Third.js';
@@ -10,9 +11,10 @@ import Footer from './components/Footer/Footer.js';
 import Blog from './Blog.js';
 
 import './App.css';
+import './components/First/First.Stylesheet.css'
 
 
-function App() {
+function App(props) {
   let windowWidth = window.innerWidth;
   let mobileWidth = 1025; //jsx marker to swap to mobile
   let isMobile = undefined;
@@ -49,7 +51,9 @@ function App() {
 
 
   return ( 
-      <BrowserRouter>
+      <BrowserRouter >
+        <Navigation isMobile={isMobile} />
+
         <Routes>
           <Route path='/' element={
             <div className="App" id='app'>

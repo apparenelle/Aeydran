@@ -11,9 +11,6 @@ function Blog(props) {
     return(
         <>
             <div className='main-window'>
-                <div className='nav-section'>
-                    <Navigation isMobile={props.isMobile} />
-                </div>
                 <div className="item-section-1">
                     <Blog_Item datePosted="September 7, 2023" title="Day 1 of Many" body={day1Body}/>
                 </div>

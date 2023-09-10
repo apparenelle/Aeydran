@@ -10,7 +10,6 @@ import './First.Stylesheet.css';
 function First(props) {
     let isSmall = props.isMobile;
     let pcPage = <section className='first-sectional'>
-        <Navigation isMobile={props.isMobile} />
         <div className='first-sectional-container'>
             <div className='home-container'>
                 <div className='home-info-container'>
@@ -30,7 +29,6 @@ function First(props) {
         </section>;
     
     let mobilePage = <section className='first-sectional'>
-        <Navigation isMobile={props.isMobile} />
         <div className='first-sectional-container'>
             <div className='home-container'>
                 <div className='home-info-container'>
