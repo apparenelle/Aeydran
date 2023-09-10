@@ -72,11 +72,11 @@
         }
     }
     .App.change{
-        transition: opacity 1s ease-in-out !important;
+        transition: opacity .5s ease-in-out !important;
         opacity: .1 !important;
     }
     .App {
-        transition: opacity 1s ease-in-out !important;
+        transition: opacity .5s ease-in-out !important;
         opacity: 1;
     }
 
