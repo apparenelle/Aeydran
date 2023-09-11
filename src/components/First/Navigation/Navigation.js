@@ -12,6 +12,7 @@ function Navigation(props){
 
     let pcPage = 
     <div className='container-nav'>
+        <HashLink to='/' className='navigation-links'>Home</HashLink>
         <HashLink to='/blog' className='navigation-links'>Blog</HashLink>
         <HashLink to='/#second-sectional' className='navigation-links'>Skills</HashLink>
         <HashLink to='/#third-sectional' className='navigation-links'>Projects</HashLink>
