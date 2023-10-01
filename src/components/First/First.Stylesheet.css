@@ -44,7 +44,6 @@
     flex-direction: row;
     /* min-width: fit-content; */
     align-items: center;
-    justify-content: center;
 }
 @media (max-width: 1025px) {
     .home-info-container {
