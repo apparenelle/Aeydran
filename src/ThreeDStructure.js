@@ -4,7 +4,7 @@ import {  useFrame } from '@react-three/fiber'
 
 export default function ThreeDStructure(props) {
     const group = useRef()
-    const { nodes, materials } = useGLTF('./assets/Eagle.glb');
+    const { nodes, materials } = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/low-poly-spaceship/model.gltf');
   
     useFrame((state, delta) => ( group.current.rotation.y += delta/15)); 
     return (
