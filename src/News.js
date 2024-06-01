@@ -10,6 +10,7 @@ export class News extends React.Component {
         );
     }
 }
+
 export class NewsLetter extends React.Component {
     // constructor(props){
     //     super(props);

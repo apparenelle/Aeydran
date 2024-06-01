@@ -19,7 +19,7 @@ function First(props) {
                     <div className='greetings-flex'>
                         <div className='greetings-box'>
                             <h1>Aeydran<br/><i>Software Engineer</i></h1>
-                            <div>Born and raised here in NYC.<br/>I am an intuitive problem solver<br/> always looking for the next mountain.</div>
+                            <div>NYC<br/>Intuitive<br/>Problem Solver</div>
                         </div>
                     </div>
                 </div>

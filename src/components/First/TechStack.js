@@ -8,7 +8,6 @@ import reactPng from '../../assets/tech-stack-images/React-icon.png';
 import sqlPng from '../../assets/tech-stack-images/SQL-icon.png';
 
 
-
 function TechStack( props ){
     // run traditional js here
 

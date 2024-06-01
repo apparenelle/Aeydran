@@ -28,10 +28,6 @@ function App(props) {
 
   const [mobileState, setIsMobile] = useState(isMobile);
 
-  // Troubleshooting whether in mobile mode or not.
-  // console.log(`This is initial width: ${windowWidth}px. Mobile: ${isMobile}.`);
-
-
   useEffect(() => {
     window.addEventListener("resize", () =>{
       windowWidth = window.innerWidth;
@@ -65,16 +61,15 @@ function App(props) {
               <Outlet />
             </div>}>
           </Route>
-            <Route path='blog' element={
-              <>
-                <div className='App' id='app'>
-                  <Blog isMobile={mobileState} />
-                  <Outlet />
-                </div>
-              </>
-            } />
 
-
+          <Route path='blog' element={
+            <>
+              <div className='App' id='app'>
+                <Blog isMobile={mobileState} />
+                <Outlet />
+              </div>
+            </>
+          }/>
         </Routes>
       </BrowserRouter>
   );
