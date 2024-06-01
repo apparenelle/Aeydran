@@ -31,7 +31,7 @@ export function Sandwich(props) {
     }
     return(
         <>
-            <div className='mobile-sandwich' id="mobile-sandwich" onClick={() => { sandwichDance();}}>
+            <div className='mobile-sandwich flex-column aitems-center jcontent-space-around' id="mobile-sandwich" onClick={() => { sandwichDance();}}>
                 <div className='mobile-sandwich-1'></div>
                 <div className='mobile-sandwich-2'></div>
                 <div className='mobile-sandwich-3'></div>
@@ -55,17 +55,14 @@ export function Sandwich(props) {
 
 
 function openMobileNav(){
-    document.getElementById("myNav").style.width = "40%";
-    // document.getElementById("root").style.marginLeft = "40%";
-    document.getElementById("root").style.transition = "0.5s";
-
+    document.getElementById("myNav").style.width = "100vw";
+    document.getElementById("root").style.transition = "0.3s";
+    document.body.style.overflow = 'hidden';
     console.log("nav was opened");
 }
 
 function closeMobileNav(){
-    
-    document.getElementById("myNav").style.width = "0%";
-    // document.getElementById("root").style.marginLeft = "0%";
-
+    document.getElementById("myNav").style.width = "0vw";
+    document.body.style.overflow = '';
     console.log("nav was  closed");
 }

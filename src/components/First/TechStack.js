@@ -12,7 +12,7 @@ function TechStack( props ){
     // run traditional js here
 
     return(
-        <div className='tech-stack-container'>
+        <div className='tech-stack-container flex-row jcontent-space-between'>
             <img className='stackPng' src={reactPng} alt='react framework'></img>
             <img className='stackPng' src={jsPng} alt='javascript'></img>
             <img className='stackPng' src={pythonPng} alt='python'></img>

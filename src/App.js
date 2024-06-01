@@ -11,6 +11,7 @@ import Footer from './components/Footer/Footer.js';
 import Blog from './Blog.js';
 
 import './App.css';
+import './flex.css'
 import './components/First/First.Stylesheet.css'
 
 
@@ -48,11 +49,11 @@ function App(props) {
 
   return ( 
       <BrowserRouter >
-        <Navigation isMobile={isMobile} />
 
         <Routes>
           <Route path='/' element={
-            <div className="App" id='app'>
+            <div className="App flex-column aitems-center" id='app'>
+              <Navigation isMobile={isMobile} />
               <First isMobile={mobileState}/>
               <Second isMobile={mobileState}/>
               <Third isMobile={mobileState}/>
@@ -65,6 +66,7 @@ function App(props) {
           <Route path='blog' element={
             <>
               <div className='App' id='app'>
+                <Navigation isMobile={isMobile} />
                 <Blog isMobile={mobileState} />
                 <Outlet />
               </div>

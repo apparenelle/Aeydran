@@ -7,7 +7,7 @@ function Second(props) {
         return(
             <section className='second-sectional' id='second-sectional'>
                 <div className='second-sectional-container'>
-                    <h2>Passions</h2>
+                    <h2>Disciplines</h2>
                     <div className='passion-links'>
                         <div className='collective-passions-flex-container'>
                             <a href='#' className='passion-box-layout'>
@@ -27,11 +27,11 @@ function Second(props) {
                                 <div className='passion-label'><p>Coding</p></div>
                             </a>
                         </div>
-                        <div className='passion-text'>
+                        {/* <div className='passion-text'>
                             <p className='passion-text-p'>
                             Welcome to my portfolio website! Here, you'll find the perfect blend of my four passions: coding, engineering, photography, and trading. Through coding, I bring ideas to life and <span id='highlight'>solve complex problems</span>. Engineering bridges imagination with practicality, allowing me to create lasting structures and technologies. Photography freezes moments and shares unique perspectives. Trading offers an exhilarating world of <span id='highlight'>numbers</span> and <span id='highlight'>patterns</span>. Explore my projects and witness the fusion of these passions. Let's inspire and leave a lasting impact together.
                             </p>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </section>

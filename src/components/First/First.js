@@ -9,7 +9,7 @@ import './First.Stylesheet.css';
 
 function First(props) {
     let isSmall = props.isMobile;
-    let pcPage = <section className='first-sectional'>
+    let pcPage = <section className='first-sectional flex-column aitems-center'>
         <div className='first-sectional-container'>
             <div className='home-container'>
                 <div className='home-info-container'>
@@ -19,7 +19,6 @@ function First(props) {
                     <div className='greetings-flex'>
                         <div className='greetings-box'>
                             <h1>Aeydran<br/><i>Software Engineer</i></h1>
-                            <div>NYC<br/>Intuitive<br/>Problem Solver</div>
                         </div>
                     </div>
                 </div>
@@ -28,7 +27,7 @@ function First(props) {
         </div>
         </section>;
     
-    let mobilePage = <section className='first-sectional'>
+    let mobilePage = <section className='first-sectional flex-column aitems-center'>
         <div className='first-sectional-container'>
             <div className='home-container'>
                 <div className='home-info-container'>
