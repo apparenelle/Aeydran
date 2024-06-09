@@ -7,7 +7,7 @@ import Second from './components/Second/Second.js';
 import Third from './components/Third/Third.js';
 import Fourth from './components/Fourth/Fourth.js';
 import Footer from './components/Footer/Footer.js';
-
+import Loading from './Loading.js';
 import Blog from './Blog.js';
 
 import './App.css';
@@ -15,7 +15,8 @@ import './flex.css'
 import './components/First/First.Stylesheet.css'
 
 
-function App(props) {
+function App() {
+
   let windowWidth = window.innerWidth;
   let mobileWidth = 1025; //jsx marker to swap to mobile
   let isMobile = undefined;
@@ -32,35 +33,34 @@ function App(props) {
   useEffect(() => {
     window.addEventListener("resize", () =>{
       windowWidth = window.innerWidth;
-      if(windowWidth<mobileWidth)
-      {
-        isMobile=true;
-      }
-      else
-      {
-        isMobile=false
-      }
+      { windowWidth<mobileWidth ? (isMobile=true) : (isMobile=false) }
+      
       console.log(`Window width is ${windowWidth}px. Are we in mobile mode: ${isMobile}.`); 
       setIsMobile(isMobile);
     });
   }, [windowWidth, isMobile]);
 
-
-
+  
+  
+  
   return ( 
       <BrowserRouter >
 
         <Routes>
           <Route path='/' element={
-            <div className="App flex-column aitems-center" id='app'>
-              <Navigation isMobile={isMobile} />
-              <First isMobile={mobileState}/>
-              <Second isMobile={mobileState}/>
-              <Third isMobile={mobileState}/>
-              <Fourth isMobile={mobileState}/>
-              <Footer isMobile={mobileState}/>
-              <Outlet />
-            </div>}>
+            <>
+              <Loading />
+              <div className={`App flex-column aitems-center jcontent-center`}  id='app'>
+                <Navigation isMobile={isMobile} />
+                <First id={'home'} isMobile={mobileState}/>
+                <Second isMobile={mobileState}/>
+                <Third isMobile={mobileState}/>
+                <Fourth isMobile={mobileState}/>
+                <Footer isMobile={mobileState}/>
+                <Outlet />
+              </div>
+            </>
+          }>
           </Route>
 
           <Route path='blog' element={

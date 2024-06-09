@@ -1,7 +1,7 @@
 /*----------Start of Nav----------*/
 .container-nav {
     margin-top: 40px;
-    width: 80%;
+    width: 100%;
     height: 60px;
 }
 .navigation-links{
@@ -14,8 +14,9 @@
 }
 
 .mobile-sandwich{
-    height: 100%;
-    /* position: fixed; */
+    position: fixed;
+    height: 9vh;
+    right: 10vw;
     z-index: 12;
 }
 
@@ -29,22 +30,6 @@
     transition: 0.3s;
 }
 
-
-
-
-
-/* WIP */
-/* @media (max-width: 1025px){ */
-
-/* .App.change {
-    transition: opacity .5s ease-in-out !important;
-    /* opacity: .1 !important; */
-    
-/* } */
-/* .App {
-    transition: opacity .5s ease-in-out !important;
-    opacity: 1;
-} */ 
 
 .change .mobile-sandwich-1 {
     transform: translate(0, .8rem) rotate(-45deg);

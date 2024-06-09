@@ -13,7 +13,7 @@ function Navigation({ isMobile}){
         <div className={`container-nav jcontent-space-around flex-grow-1 ${!isMobile ? 'flex-row aitems-center' : 'flex-column aitems-end'} `}>
             {!isMobile ? (
                 <>
-                    <HashLink to='/' className='navigation-links'>Home</HashLink>
+                    <HashLink to='/#home' className='navigation-links'>Home</HashLink>
                     <HashLink to='/blog' className='navigation-links'>Blog</HashLink>
                     <HashLink to='/#second-sectional' className='navigation-links'>Skills</HashLink>
                     <HashLink to='/#third-sectional' className='navigation-links'>Projects</HashLink>

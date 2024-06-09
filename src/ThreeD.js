@@ -8,7 +8,7 @@ export default function ThreeD( props ){
     
     return (
         <Canvas>
-            <OrbitControls/>
+            <OrbitControls enableDamping={true} />
             <ambientLight intensity={-4} />
             <pointLight position={ [10, 10, 10] }/>
             <ThreeDStructure scale={props.nScale} position = {[0, 0, 0]}/>

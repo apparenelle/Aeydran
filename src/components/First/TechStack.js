@@ -9,7 +9,6 @@ import sqlPng from '../../assets/tech-stack-images/SQL-icon.png';
 
 
 function TechStack( props ){
-    // run traditional js here
 
     return(
         <div className='tech-stack-container flex-row jcontent-space-between'>

@@ -38,7 +38,7 @@ export function Sandwich(props) {
             </div> 
             <div className="overlay" id='myNav'>
                 <div  className="overlay-content">
-                    <HashLink onClick={() => { sandwichDance();}} to='/' className='navigation-links'>Home</HashLink>
+                    <HashLink onClick={() => { sandwichDance();}} to='/#' className='navigation-links'>Home</HashLink>
                     <HashLink onClick={() => { sandwichDance();}} to='/blog' className='navigation-links'>Blog</HashLink>
                     <HashLink onClick={() => { sandwichDance();}} to='/#second-sectional' className='navigation-links'>Skills</HashLink>
                     <HashLink onClick={() => { sandwichDance();}} to='/#third-sectional' className='navigation-links'>Projects</HashLink>

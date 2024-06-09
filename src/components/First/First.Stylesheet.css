@@ -59,6 +59,7 @@
     align-items: center;
     justify-content: center;
     overflow: visible !important;
+    /* z-index: 0; */
 }
 @media (max-width: 1025px) {
     .photo-flex{
@@ -153,4 +154,23 @@
     width: 9%;
     margin: 3vw;
     aspect-ratio: 16/14;
+}
+
+
+.cursor {
+    display: inline-block;
+    width: 10px;
+    background-color: #fff;
+    margin-left: 5px;
+    animation: blink 0.7s steps(1) infinite;
+}
+
+.cursor.typing {
+    animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
 }
