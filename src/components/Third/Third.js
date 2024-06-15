@@ -7,7 +7,7 @@ import dataAi from '../../assets/data-ai.png';
 
 function Third(props){
     return(
-        <section id='third-sectional' className='third-sectional'>
+        <section id='third-sectional' className='sectional flex-column aitems-center jcontent-center'>
             <div className='third-sectional-container'>
                 <h2>Projects</h2>
                 <div className='projects-links'>

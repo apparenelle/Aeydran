@@ -6,7 +6,7 @@ import { HashLink } from 'react-router-hash-link';
 
 import './Navigation.Stylesheet.css'
 
-function Navigation({ isMobile}){
+function Navigation({ isMobile }){
     let isCrossed = false;
 
     return(

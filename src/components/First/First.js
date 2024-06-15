@@ -1,4 +1,3 @@
-//import all images and documents and us js to call them.
 import { useRef, useState, useEffect } from 'react';
 import Navigation from './Navigation/Navigation.js';
 import TechStack from './TechStack.js';
@@ -12,63 +11,69 @@ function First(props) {
 
     const [typedText, setTypedText] = useState("");
     const [isTyping, setIsTyping] = useState(true);
-    const textArray = ["Software Engineer", "Data Engineer", "Problem Solver"];
+    const textArray = ["Master of Arms", "Software Engineer", "Big Data Savant", "Problem Solver", , ""];
     const typingDelay = 200;
     const erasingDelay = 100;
     const newTextDelay = 2000;
+    const [charIndex, setCharIndex] = useState(0);
+    const [textArrayIndex, setTextArrayIndex] = useState(0);
     
     useEffect(() => {
-        let textArrayIndex = 0;
-        let charIndex = 0;
-        
-        function type() {
-            if (charIndex < textArray[textArrayIndex].length) {
-                setTypedText(prev => prev + textArray[textArrayIndex].charAt(charIndex));
-                charIndex++;
-                setTimeout(type, typingDelay);
+        if (isTyping) {
+            if (charIndex < textArray[textArrayIndex]?.length) {
+                const timeout = setTimeout(() => {
+                    setTypedText((prev) => prev + textArray[textArrayIndex].charAt(charIndex));
+                    setCharIndex((prev) => prev + 1);
+                }, typingDelay);
+                return () => clearTimeout(timeout);
             } else {
-                setIsTyping(false);
-                setTimeout(erase, newTextDelay);
+                const timeout = setTimeout(() => setIsTyping(false), newTextDelay);
+                return () => clearTimeout(timeout);
             }
-        }
-
-        function erase() {
+        } else {
             if (charIndex > 0) {
-                setTypedText(prev => prev.substring(0, prev.length - 1));
-                charIndex--;
-                setTimeout(erase, erasingDelay);
+                const timeout = setTimeout(() => {
+                    setTypedText((prev) => prev.substring(0, prev?.length - 1));
+                    setCharIndex((prev) => prev - 1);
+                }, erasingDelay);
+                return () => clearTimeout(timeout);
             } else {
-                textArrayIndex = (textArrayIndex + 1) % textArray.length;
-                setIsTyping(true);
-                setTimeout(type, typingDelay + 1100);
+                const timeout = setTimeout(() => {
+                    setTextArrayIndex((prev) => (prev + 1) % textArray?.length);
+                    setIsTyping(true);
+                }, typingDelay + 1100);
+                return () => clearTimeout(timeout);
             }
         }
-
-        type();
-    }, []);
+    }, [charIndex, isTyping, textArrayIndex]);
 
     return (
-        <section className='first-sectional flex-column aitems-center'>
-            <div className='first-sectional-container'>
+        <section className='sectional flex-column aitems-center jcontent-center'>
+            <div className='first-sectional-container flex-column aitems-center jcontent-center'>
                 <div className='home-container'>
                     <div className='home-info-container'>
                         <div className='photo-flex'>
-                            {isMobile ? ( <ThreeD nScale={1.4}/> ) : ( <ThreeD nScale={1.4}/> )}
+                            {isMobile ? <ThreeD nScale={1.4}/> : <ThreeD nScale={1.4}/>}
                         </div>
+                        <br></br>
                         <div className='greetings-flex'>
                             <div className='greetings-box'>
-                                <h1>Aeydran</h1>
-                                <i>
-                                    <span className="typed-text">{typedText}</span>
+                                <h1>Adrian</h1>
+                            {/* <h6 className='white'>Sometimes a...</h6> */}
+                                <i className='flex-row'>
+                                    <span className="dont-wrap-text">{typedText}</span>
                                     <span className={`cursor ${isTyping ? 'typing' : ''}`}>&nbsp;</span>
                                 </i>
                             </div>
                         </div>
                     </div>
+                    <br></br>
+                    <br></br>
                     <TechStack/>
                 </div>
             </div>
         </section>
     );
 }
+
 export default First;

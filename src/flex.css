@@ -1,7 +1,15 @@
 .flex-row {
     display: flex;
     flex-direction: row;
+    /* flex-wrap: wrap; */
+  }
+
+  .wrap {
     flex-wrap: wrap;
+  }
+
+  .nowrap {
+    flex-wrap: nowrap;
   }
   
   .flex-column {
@@ -60,4 +68,10 @@
 
   .h100perc{
     height:100%
+  }
+
+
+  /* General css */
+  .dont-wrap-text {
+    text-wrap: nowrap;
   }

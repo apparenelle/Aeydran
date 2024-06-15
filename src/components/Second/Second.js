@@ -3,9 +3,9 @@ import './Second.Stylesheet.css'
 import React from 'react';
 
 
-function Second(props) {
+function Second() {
         return(
-            <section className='second-sectional' id='second-sectional'>
+            <section className='sectional flex-column jcontent-center aitems-center' id='second-sectional'>
                 <div className='second-sectional-container'>
                     <h2>Disciplines</h2>
                     <div className='passion-links'>
