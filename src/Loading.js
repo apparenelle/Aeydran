@@ -8,7 +8,7 @@ export default function Loading (){
         setTimeout(() => {
             setLoading(false);
             document.body.overflow = '';
-        }, 1200);
+        }, 1100);
     },[]);
 
     return (

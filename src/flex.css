@@ -75,3 +75,7 @@
   .dont-wrap-text {
     text-wrap: nowrap;
   }
+
+  .color-white {
+    color: white;
+  }

@@ -2,12 +2,10 @@ import { useRef, useState, useEffect } from 'react';
 import Navigation from './Navigation/Navigation.js';
 import TechStack from './TechStack.js';
 import ThreeD from '../../ThreeD.js';
-
-// import './App.css';
 import './First.Stylesheet.css';
 
-function First(props) {
-    let isMobile = props.isMobile;
+function First({isMobile}) {
+    // let isMobile = props.isMobile;
 
     const [typedText, setTypedText] = useState("");
     const [isTyping, setIsTyping] = useState(true);
@@ -48,30 +46,26 @@ function First(props) {
     }, [charIndex, isTyping, textArrayIndex]);
 
     return (
-        <section className='sectional flex-column aitems-center jcontent-center'>
-            <div className='first-sectional-container flex-column aitems-center jcontent-center'>
-                <div className='home-container'>
-                    <div className='home-info-container'>
-                        <div className='photo-flex'>
-                            {isMobile ? <ThreeD nScale={1.4}/> : <ThreeD nScale={1.4}/>}
-                        </div>
-                        <br></br>
-                        <div className='greetings-flex'>
-                            <div className='greetings-box'>
-                                <h1>Adrian</h1>
-                            {/* <h6 className='white'>Sometimes a...</h6> */}
-                                <i className='flex-row'>
-                                    <span className="dont-wrap-text">{typedText}</span>
-                                    <span className={`cursor ${isTyping ? 'typing' : ''}`}>&nbsp;</span>
-                                </i>
-                            </div>
-                        </div>
+        <section className='sectional flex-column aitems-center color-white'>
+            <div className= {`meet-me ${isMobile ? 'flex-column aitems-center':'flex-row'} `}>
+                <div className='three-d-container flex-grow-1'>
+                    <ThreeD nScale={isMobile ? 1.4 : 1.4} />
+                </div>
+                <br />
+                <div className='greetings-flex'>
+                    <div className='greetings-box'>
+                        <h1>Adrian</h1>
+                        <h6 className='white'>Sometimes a...</h6>
+                        <p className='flex-row'>
+                            <span className="dont-wrap-text">{typedText}</span>
+                            <span className={`cursor ${isTyping ? 'typing' : ''}`}>&nbsp;</span>
+                        </p>
                     </div>
-                    <br></br>
-                    <br></br>
-                    <TechStack/>
                 </div>
             </div>
+            <br></br>
+            <br></br>
+            <TechStack/>
         </section>
     );
 }

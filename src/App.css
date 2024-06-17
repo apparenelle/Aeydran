@@ -28,9 +28,10 @@ html, body {
     
 }
 
-.sectional{
+.sectional{ 
+    position: relative;
     width: 100%;
-    height: max(90vh, 600px);
+    min-height: max(90vh, 600px);
 }
 
 #highlight{
