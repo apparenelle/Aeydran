@@ -10,7 +10,7 @@ export default function ThreeD( props ){
         <Suspense fallback={<span className="loading">loading ... </span>}>
             <Canvas className='ThreeD' id='ThreeD'>
                 {/* <OrbitControls enableDamping={true}  /> */}
-                <OrbitControls enableZoom={true}  />
+                {/* <OrbitControls enableZoom={true}  /> */}
                 <ambientLight intensity={-4} />
                 <pointLight position={ [10, 10, 10] }/>
                 <ThreeDStructure scale={props.nScale} position = {[0, 0, 0]}/>

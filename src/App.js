@@ -3,15 +3,15 @@ import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
 
 import Navigation from './components/First/Navigation/Navigation.js';
 import First from './components/First/First.js';
-import Second from './components/Second/Second.js';
-import Third from './components/Third/Third.js';
-import Fourth from './components/Fourth/Fourth.js';
-import Footer from './components/Footer/Footer.js';
+import Second from './components/Hobbies/Second.js';
+import Third from './components/Projects/Third.js';
+import Fourth from './components/Experiences/Fourth.js';
+import Footer from './components/Contact-Me/Footer.js';
 import Loading from './Loading.js';
 import Blog from './Blog.js';
 
 import './App.css';
-import './flex.css'
+import './flex.css';
 import './components/First/First.Stylesheet.css'
 
 
@@ -50,7 +50,7 @@ function App() {
           <Route path='/' element={
             <>
               <Loading />
-              <div className={`App flex-column aitems-center jcontent-center`}  id='app'>
+              <div className={`App flex-column aitems-center color-white jcontent-center`}  id='app'>
                 <Navigation isMobile={isMobile} />
                 <First id={'home'} isMobile={mobileState}/>
                 <Second isMobile={mobileState}/>

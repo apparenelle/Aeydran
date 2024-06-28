@@ -4,78 +4,107 @@
     /* flex-wrap: wrap; */
   }
 
-  .wrap {
-    flex-wrap: wrap;
-  }
+.wrap {
+  flex-wrap: wrap;
+}
 
-  .nowrap {
-    flex-wrap: nowrap;
-  }
-  
-  .flex-column {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .jcontent-space-around {
-    justify-content: space-around;
-  }
-  
-  .jcontent-space-between {
-    justify-content: space-between;
-  }
-  
-  .jcontent-center {
-    justify-content: center;
-  }
-  
-  .aitems-center {
-    align-items: center;
-  }
-  
-  .aitems-start {
-    align-items: flex-start;
-  }
+.nowrap {
+  flex-wrap: nowrap;
+}
 
-  .aitems-end {
-    align-items: flex-end;
-  }
-  
-  
-  .flex-grow-1 {
-    flex-grow: 1;
-  }
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
 
-  .flex-grow-9 {
-    flex-grow: 9;
-  }
+.jcontent-start {
+  justify-content: flex-start;
+}
 
-  .flex-shrink-1 {
-    flex-shrink: 1;
-  }
+.jcontent-end {
+  justify-content: flex-end;
+}
 
-  .flex-shrink-9 {
-    flex-shrink: 9;
-  }
-
-  .z-index-1{
-    z-index: 1;
-  }
-
-  .w100perc{
-    width:100%
-  }
-
-  .h100perc{
-    height:100%
-  }
+.jcontent-space-around {
+  justify-content: space-around;
+}
 
 
-  /* General css */
-  .dont-wrap-text {
-    text-wrap: nowrap;
-  }
+.jcontent-space-between {
+  justify-content: space-between;
+}
 
-  .color-white {
-    color: white;
-  }
+.jcontent-center {
+  justify-content: center;
+}
+
+.aitems-center {
+  align-items: center;
+}
+
+.aitems-start {
+  align-items: flex-start;
+}
+
+.aitems-end {
+  align-items: flex-end;
+}
+
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+.flex-shrink-1 {
+  flex-shrink: 1;
+}
+
+.flex-grow-2 {
+  flex-grow: 2;
+}
+.flex-shrink-2 {
+  flex-shrink: 2;
+}
+
+.flex-grow-3 {
+  flex-grow: 3;
+}
+.flex-shrink-3 {
+  flex-shrink: 3;
+}
+
+.flex-grow-4 {
+  flex-grow: 4;
+}
+.flex-shrink-4 {
+  flex-shrink: 4;
+}
+
+.flex-grow-5 {
+  flex-grow: 5;
+}
+.flex-shrink-6 {
+  flex-shrink: 6;
+}
+
+.flex-grow-7 {
+  flex-grow: 7;
+}
+.flex-shrink-7 {
+  flex-shrink: 7;
+}
+
+.flex-grow-8 {
+  flex-grow: 8;
+}
+.flex-shrink-8 {
+  flex-shrink: 8;
+}
+
+.flex-grow-9 {
+  flex-grow: 9;
+}
+.flex-shrink-9 {
+  flex-shrink: 9;
+}
+
+

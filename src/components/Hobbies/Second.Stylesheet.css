@@ -1,0 +1,7 @@
+.passion-image{
+    /* max-width: 200px; */
+    /* height: 100%; */
+    aspect-ratio: 16/14;
+    border-radius: .25rem;
+    object-fit: fill;
+}

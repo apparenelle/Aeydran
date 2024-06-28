@@ -9,7 +9,7 @@ function First({isMobile}) {
 
     const [typedText, setTypedText] = useState("");
     const [isTyping, setIsTyping] = useState(true);
-    const textArray = ["Master of Arms", "Software Engineer", "Big Data Savant", "Problem Solver", , ""];
+    const textArray = ["","( Analyst )", "( Software Engineer )", "( Big Data Savant )", "( Problem Solver )", "( Q )", ""];
     const typingDelay = 200;
     const erasingDelay = 100;
     const newTextDelay = 2000;
@@ -46,16 +46,19 @@ function First({isMobile}) {
     }, [charIndex, isTyping, textArrayIndex]);
 
     return (
-        <section className='sectional flex-column aitems-center color-white'>
+        <section className='sectional flex-column aitems-center jcontent-space-around color-white'>
             <div className= {`meet-me ${isMobile ? 'flex-column aitems-center':'flex-row'} `}>
                 <div className='three-d-container flex-grow-1'>
-                    <ThreeD nScale={isMobile ? 1.4 : 1.4} />
+                    <ThreeD nScale={isMobile ? 1.1 : 1.4} />
                 </div>
                 <br />
-                <div className='greetings-flex'>
-                    <div className='greetings-box'>
+                <div className={`greetings-flex  jcontent-center${isMobile ? '' : ''}`}>
+                    <div className=''>
                         <h1>Adrian</h1>
-                        <h6 className='white'>Sometimes a...</h6>
+                        <p className='white font-small'>Jack of All Trades,</p>
+                        <p className='white font-small'>Master of The Universe</p>
+                        <p className='white font-small'>The More You Know (x2)</p>
+                        <br/>
                         <p className='flex-row'>
                             <span className="dont-wrap-text">{typedText}</span>
                             <span className={`cursor ${isTyping ? 'typing' : ''}`}>&nbsp;</span>
@@ -65,7 +68,7 @@ function First({isMobile}) {
             </div>
             <br></br>
             <br></br>
-            <TechStack/>
+            {/* <TechStack isMobile={isMobile}/> */}
         </section>
     );
 }

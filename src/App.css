@@ -29,9 +29,9 @@ html, body {
 }
 
 .sectional{ 
-    position: relative;
-    width: 100%;
-    min-height: max(90vh, 600px);
+    /* position: relative; */
+    min-width: 100%;
+    min-height: max(60vh, 700px);
 }
 
 #highlight{
@@ -58,4 +58,29 @@ html, body {
 .hide-loading {
     opacity: 0;
     z-index: -20;
+}
+
+.z-index-1{
+    z-index: 1; 
+}
+  
+.w100perc{
+width:100%
+}
+
+.h100perc{
+height:100%
+}
+
+/* General css */
+.dont-wrap-text {
+text-wrap: nowrap;
+}
+
+.color-white {
+color: white;
+}
+
+.font-small {
+font-size: .7rem; 
 }
