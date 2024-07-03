@@ -5,13 +5,13 @@ import ImageTextHorizontalCard from '../../ImgTextHorizontalCard';
 import React from 'react';
 
 
-function Second() {
+function Second({isMobile}) {
     
     const hobbiesArr = [
         {
             imgSrc: 'https://media.giphy.com/media/1569RvwRjejO2IcueA/giphy-downsized-large.gif',
             title: 'Trading',
-            description: 'Started trading from 2017 mostly stocks and crypto.'
+            description: 'Started trading in 2017, mostly stocks and crypto.'
         },
         {
             imgSrc: 'https://media.giphy.com/media/3oEduKi6hUgSVAay4M/giphy.gif',
@@ -35,14 +35,14 @@ function Second() {
         },]
     
     return(
-            <section className='sectional color-white flex-column jcontent-space-around aitems-center' id='second-sectional'>
-                <h2>Hobbies</h2>
-                
-                {hobbiesArr.map(({imgSrc, title, description}) => {
-                    return (<ImageTextHorizontalCard imgSrc={imgSrc} title={title} description={description}/>);
-                })}
-                
-            </section>
+        <section className='sectional color-white flex-column jcontent-space-around' id='second-sectional'>
+            <h2 className='aself-center'>Hobbies</h2>
+            
+            {hobbiesArr.map(({imgSrc, title, description}) => {
+                return (<ImageTextHorizontalCard isMobile={isMobile} imgSrc={imgSrc} title={title} description={description} img2nd={false}/>);
+            })}
+            
+        </section>
         );
 }
 

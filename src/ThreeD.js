@@ -4,18 +4,19 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 
 
-export default function ThreeD( props ){
-    
+export default function ThreeD( {nScale} ){
     return (
-        <Suspense fallback={<span className="loading">loading ... </span>}>
-            <Canvas className='ThreeD' id='ThreeD'>
-                {/* <OrbitControls enableDamping={true}  /> */}
+        <Suspense>
+            <Canvas className='three-d-canvas flex-grow-1'>
                 {/* <OrbitControls enableZoom={true}  /> */}
                 <ambientLight intensity={-4} />
                 <pointLight position={ [10, 10, 10] }/>
-                <ThreeDStructure scale={props.nScale} position = {[0, 0, 0]}/>
+                <ThreeDStructure scale={nScale} position = {[0, 0, 0]}/>
             </Canvas>
         </Suspense>
     );
 }
 
+
+// <Suspense fallback={<span className="loading">loading ... </span>}>
+{/* <OrbitControls enableDamping={true}  /> */}

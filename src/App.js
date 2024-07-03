@@ -50,7 +50,7 @@ function App() {
           <Route path='/' element={
             <>
               <Loading />
-              <div className={`App flex-column aitems-center color-white jcontent-center`}  id='app'>
+              <div className={`App flex-column aitems-center color-white`}  id='app'>
                 <Navigation isMobile={isMobile} />
                 <First id={'home'} isMobile={mobileState}/>
                 <Second isMobile={mobileState}/>
@@ -60,8 +60,7 @@ function App() {
                 <Outlet />
               </div>
             </>
-          }>
-          </Route>
+          }></Route>
 
           <Route path='blog' element={
             <>

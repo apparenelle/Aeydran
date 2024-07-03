@@ -31,30 +31,20 @@
 }
 
 .meet-me {
-    position: relative;
-    /* overflow: visible; */
+    width: 100%;
+    /* height: ; */
 }
 
 .three-d-container{
-    z-index: 1;
-    left: 25%;
-    overflow: visible;
+    /* display:flex; */
+    max-height: 60vh;
+    flex: 2 1;
 }
 
-
-
-
 .greetings-flex{
-    display:flex;
-    position: relative;
-
-    /* z-index: 2; */
-    /* bottom: -5vh; */
-    min-width: 20rem;
-    /* overflow: none; */
-    flex-direction: column;
-    /* flex-wrap: nowrap; */
-    z-index: 3;
+    /* display:flex; */
+    flex: 1 2;
+    padding: 20px 10px;
 }
 
 
@@ -125,22 +115,7 @@
     animation: blink 0.7s steps(1) infinite;
 }
 
-canvas {
-    /* width: 500px; */
-    /* height: 80vh; */
-    /* display: flex; */
-    position: relative;
-    z-index: 0;
-    overflow: visible;
-}
-
-#ThreeD {
-    min-width: 70vw;
-    min-height: 80vh;
-    /* display: flex; */
-    /* flex-grow: 1; */
-    position: relative;
-    /* z-index: 0; */
-    overflow: visible;
-    /* overflow-clip-margin: none; */
+.three-d-canvas {
+    width: 100%;
+    height: 100%;
 }

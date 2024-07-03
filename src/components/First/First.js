@@ -46,13 +46,12 @@ function First({isMobile}) {
     }, [charIndex, isTyping, textArrayIndex]);
 
     return (
-        <section className='sectional flex-column aitems-center jcontent-space-around color-white'>
-            <div className= {`meet-me ${isMobile ? 'flex-column aitems-center':'flex-row'} `}>
-                <div className='three-d-container flex-grow-1'>
-                    <ThreeD nScale={isMobile ? 1.1 : 1.4} />
+        <section className='sectional flex-column aitems-center jcontent-center color-white'>
+            <div className= {`meet-me flex-grow-1 ${isMobile ? 'flex-column aitems-center':'flex-row'} `}>
+                <div className='three-d-container'>
+                    <ThreeD nScale={isMobile ? 1.4 : 1.6} />
                 </div>
-                <br />
-                <div className={`greetings-flex  jcontent-center${isMobile ? '' : ''}`}>
+                <div className={`greetings-flex flex-column  jcontent-center${isMobile ? '' : ''}`}>
                     <div className=''>
                         <h1>Adrian</h1>
                         <p className='white font-small'>Jack of All Trades,</p>
@@ -66,8 +65,8 @@ function First({isMobile}) {
                     </div>
                 </div>
             </div>
-            <br></br>
-            <br></br>
+            {/* <br></br> */}
+            {/* <br></br> */}
             {/* <TechStack isMobile={isMobile}/> */}
         </section>
     );
