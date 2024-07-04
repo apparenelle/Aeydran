@@ -6,17 +6,18 @@ import { OrbitControls } from '@react-three/drei';
 
 export default function ThreeD( {nScale} ){
     return (
-        <Suspense>
-            <Canvas className='three-d-canvas flex-grow-1'>
-                {/* <OrbitControls enableZoom={true}  /> */}
+        <div className='three-d'>
+            <Canvas>
                 <ambientLight intensity={-4} />
                 <pointLight position={ [10, 10, 10] }/>
                 <ThreeDStructure scale={nScale} position = {[0, 0, 0]}/>
             </Canvas>
-        </Suspense>
+        </div>
     );
 }
 
 
+
+// _________________Spare Parts_________________//
 // <Suspense fallback={<span className="loading">loading ... </span>}>
 {/* <OrbitControls enableDamping={true}  /> */}
