@@ -19,6 +19,7 @@
 .img-text-hz-card > div {
     display: flex;
     flex: 9 1;
+    width: 90%;
     margin: 15px 20px;
 }
 
