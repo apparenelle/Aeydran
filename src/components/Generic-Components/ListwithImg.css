@@ -1,0 +1,23 @@
+.item-image {
+    width: 200px;
+    min-height: 200px;
+    display: flex;
+    flex: 1 9;
+    object-fit: fill;
+}
+
+.img-text-hz-card {
+    margin: 30px 60px;
+}
+
+.img-text-hz-card > div > h4 {
+    margin: 20px 0px;
+}
+
+.img-text-hz-card > div {
+    display: flex;
+    flex: 9 1;
+    width: 90%;
+    margin: 15px 20px;
+}
+

@@ -3,18 +3,21 @@ import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
 
 import Navigation from './components/First/Navigation/Navigation.js';
 import First from './components/First/First.js';
-import Second from './components/Second/Second.js';
-import Third from './components/Third/Third.js';
-import Fourth from './components/Fourth/Fourth.js';
-import Footer from './components/Footer/Footer.js';
-
+import ListwithImg from './components/Generic-Components/ListwithImg.js';
+// import Fourth from './components/Experiences/Fourth.js';
+import Footer from './components/Contact-Me/Footer.js';
+import Loading from './Loading.js';
 import Blog from './Blog.js';
 
+import { hobbiesArr, projectsArr, experienceArr } from './Data.js';
+
 import './App.css';
+import './flex.css';
 import './components/First/First.Stylesheet.css'
 
 
-function App(props) {
+function App() {
+
   let windowWidth = window.innerWidth;
   let mobileWidth = 1025; //jsx marker to swap to mobile
   let isMobile = undefined;
@@ -28,21 +31,11 @@ function App(props) {
 
   const [mobileState, setIsMobile] = useState(isMobile);
 
-  // Troubleshooting whether in mobile mode or not.
-  // console.log(`This is initial width: ${windowWidth}px. Mobile: ${isMobile}.`);
-
-
   useEffect(() => {
     window.addEventListener("resize", () =>{
       windowWidth = window.innerWidth;
-      if(windowWidth<mobileWidth)
-      {
-        isMobile=true;
-      }
-      else
-      {
-        isMobile=false
-      }
+      { windowWidth<mobileWidth ? (isMobile=true) : (isMobile=false) }
+      
       console.log(`Window width is ${windowWidth}px. Are we in mobile mode: ${isMobile}.`); 
       setIsMobile(isMobile);
     });
@@ -50,31 +43,44 @@ function App(props) {
 
 
 
+ 
+  
+  const experiencesArr = [
+    {
+      imgSrc: '',
+      title: '',
+      description: "",
+    },
+  ];
+  
   return ( 
       <BrowserRouter >
-        <Navigation isMobile={isMobile} />
 
         <Routes>
           <Route path='/' element={
-            <div className="App" id='app'>
-              <First isMobile={mobileState}/>
-              <Second isMobile={mobileState}/>
-              <Third isMobile={mobileState}/>
-              <Fourth isMobile={mobileState}/>
-              <Footer isMobile={mobileState}/>
-              <Outlet />
-            </div>}>
-          </Route>
-            <Route path='blog' element={
-              <>
-                <div className='App' id='app'>
-                  <Blog isMobile={mobileState} />
-                  <Outlet />
-                </div>
-              </>
-            } />
+            <>
+              <Loading />
+              <div className={`App flex-column aitems-center color-white`}  id='app'>
+                <Navigation isMobile={isMobile} />
+                <First id={'home'} isMobile={mobileState}/>
+                <ListwithImg marker={"Hobbies"} category={"Hobbies"}  data={ hobbiesArr } isMobile={mobileState}/>
+                <ListwithImg marker={"Projects"} category={"Projects"}  data={ projectsArr } isMobile={mobileState}/>
+                <ListwithImg marker={"Experience"} category={"Experience"}  data={ experienceArr } isMobile={mobileState}/>
+                <Footer isMobile={mobileState}/>
+                <Outlet />
+              </div>
+            </>
+          }></Route>
 
-
+          <Route path='blog' element={
+            <>
+              <div className='App' id='app'>
+                <Navigation isMobile={isMobile} />
+                <Blog isMobile={mobileState} />
+                <Outlet />
+              </div>
+            </>
+          }/>
         </Routes>
       </BrowserRouter>
   );
