@@ -44,7 +44,11 @@ html, body {
 .sectional{ 
     min-width: 100%;
     min-height: max(50vh, 500px);
-    margin-bottom: 15vh;
+    margin-bottom: 25vh;
+}
+
+.sectional > h2 {
+    margin-bottom: 3vh;
 }
 
 #highlight{

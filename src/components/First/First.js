@@ -49,7 +49,7 @@ function First({isMobile}) {
         <section className='sectional flex-column aitems-center jcontent-center color-white'>
             <div className= {`meet-me flex-grow-1 ${isMobile ? 'flex-column aitems-center':'flex-row'} `}>
                 <div className='three-d-container'>
-                    <ThreeD nScale={isMobile ? 1.4 : 1.6} />
+                    <ThreeD nScale={isMobile ? 1.2 : 1.3} />
                 </div>
                 <div className={`greetings-flex flex-column  jcontent-center${isMobile ? '' : ''}`}>
                     <div className=''>
@@ -58,7 +58,7 @@ function First({isMobile}) {
                         <p className='white font-small'>Master of The Universe</p>
                         <p className='white font-small'>The More You Know (x2)</p>
                         <br/>
-                        <p className='flex-row'>
+                        <p className='flex-row jcontent-center'>
                             <span className="dont-wrap-text">{typedText}</span>
                             <span className={`cursor ${isTyping ? 'typing' : ''}`}>&nbsp;</span>
                         </p>

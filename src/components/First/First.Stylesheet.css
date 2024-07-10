@@ -37,7 +37,7 @@
 .three-d-container{
     position: relative;
     display: flex;
-    flex: 2 1;
+    flex: 6 4;
     width: 100%;
 }
 
@@ -48,17 +48,15 @@
 }
 
 canvas {
-    /* width: 100%; */
-    overflow: visible;
+    overflow-clip-margin: content-box 30px;
     aspect-ratio: auto;
 }
 
 .greetings-flex{
-    /* display:flex; */
-    flex: 1 2;
-    padding: 10px 50px;
+    flex: 4 6;
+    /* padding: 10px 50px; */
+    text-align: center;
 }
-
 
 .greetings-box{
     display: flex;
@@ -100,7 +98,6 @@ canvas {
     }
 }
 
-
 .stackPng {
     width: 60px;
     margin: 3vw;
@@ -126,8 +123,3 @@ canvas {
 .cursor .typing {
     animation: blink 0.7s steps(1) infinite;
 }
-
-/* .three-d-canvas {
-    width: 100%;
-    height: 100%;
-} */

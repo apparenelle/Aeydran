@@ -4,13 +4,12 @@ import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
 import Navigation from './components/First/Navigation/Navigation.js';
 import First from './components/First/First.js';
 import ListwithImg from './components/Generic-Components/ListwithImg.js';
-import Third from './components/Projects/Third.js';
-import Fourth from './components/Experiences/Fourth.js';
+// import Fourth from './components/Experiences/Fourth.js';
 import Footer from './components/Contact-Me/Footer.js';
 import Loading from './Loading.js';
 import Blog from './Blog.js';
 
-import { hobbiesArr, projectsArr } from './Data.js';
+import { hobbiesArr, projectsArr, experienceArr } from './Data.js';
 
 import './App.css';
 import './flex.css';
@@ -64,10 +63,9 @@ function App() {
               <div className={`App flex-column aitems-center color-white`}  id='app'>
                 <Navigation isMobile={isMobile} />
                 <First id={'home'} isMobile={mobileState}/>
-                <ListwithImg category={"Hobbies"}  data={ hobbiesArr } isMobile={mobileState}/>
-                <ListwithImg category={"Projects"}  data={ projectsArr } isMobile={mobileState}/>
-                <Third isMobile={mobileState}/>
-                <Fourth isMobile={mobileState}/>
+                <ListwithImg marker={"Hobbies"} category={"Hobbies"}  data={ hobbiesArr } isMobile={mobileState}/>
+                <ListwithImg marker={"Projects"} category={"Projects"}  data={ projectsArr } isMobile={mobileState}/>
+                <ListwithImg marker={"Experience"} category={"Experience"}  data={ experienceArr } isMobile={mobileState}/>
                 <Footer isMobile={mobileState}/>
                 <Outlet />
               </div>

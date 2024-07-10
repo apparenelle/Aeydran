@@ -1,14 +1,12 @@
 .item-image {
-    max-width: 200px;
-    /* height: 200px; */
+    width: 200px;
+    min-height: 200px;
     display: flex;
     flex: 1 9;
-    /* border-radius: .5rem; */
-    object-fit: contain;
+    object-fit: fill;
 }
 
 .img-text-hz-card {
-    /* min-width: 500px; */
     margin: 30px 60px;
 }
 
