@@ -11,7 +11,7 @@ export default function ThreeD( {nScale} ){
                 <ambientLight intensity={-4} />
                 <pointLight position={ [10, 10, 10] }/>
                 <ThreeDStructure scale={nScale} position = {[0, 0, 0]}/>
-                <OrbitControls enableDamping={true}  />
+                {/* <OrbitControls enableDamping={true}  /> */}
             </Canvas>
         </div>
     );

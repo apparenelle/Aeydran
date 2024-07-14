@@ -23,6 +23,11 @@
     100%    {opacity: 0.00;}
 }
 
+@keyframes blink{
+    0%      {opacity: 0;}
+    100%    {opacity: 1;}
+}
+
 
 .home-container{
     display: flex;
@@ -136,10 +141,6 @@ canvas {
     width: 4px;
     background-color: #FFFFFF;
     margin-left: 3px;
-    animation: blink 0.7s steps(1) infinite;
+    animation: blink .7s steps(2) infinite;
     transform: rotate(0deg)
-}
-
-.cursor .typing {
-    animation: blink 0.7s steps(1) infinite;
 }

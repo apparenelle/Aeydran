@@ -1,5 +1,5 @@
 import { useRef, useState, useEffect } from 'react';
-import Navigation from './Navigation/Navigation.js';
+import Navigation from '../Navigation/Navigation.js';
 import TechStack from './TechStack.js';
 import ThreeD from '../../ThreeD.js';
 import './First.Stylesheet.css';
@@ -9,7 +9,7 @@ function First({isMobile}) {
 
     const [typedText, setTypedText] = useState("");
     const [isTyping, setIsTyping] = useState(true);
-    const textArray = ["","( Analyst )", "( Software Engineer )", "( Big Data Savant )", "( Problem Solver )", "( Q )", ""];
+    const textArray = ["", "( Software Engineer )", "( Trader )", "( Photographer )", "( Dreamer )", "( Me )", ""];
     const typingDelay = 200;
     const erasingDelay = 100;
     const newTextDelay = 2000;

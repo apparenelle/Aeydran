@@ -1,7 +1,7 @@
 import React, { useState, useEffect, } from 'react';
 import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
 
-import Navigation from './components/First/Navigation/Navigation.js';
+import Navigation from './components/Navigation/Navigation.js';
 import First from './components/First/First.js';
 import ListwithImg from './components/Generic-Components/ListwithImg.js';
 // import Fourth from './components/Experiences/Fourth.js';

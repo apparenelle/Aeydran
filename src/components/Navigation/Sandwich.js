@@ -40,8 +40,8 @@ export function Sandwich(props) {
                 <div  className="overlay-content">
                     <HashLink onClick={() => { sandwichDance()}} to='/#' className='navigation-links'>Home</HashLink>
                     <HashLink onClick={() => { sandwichDance()}} to='/blog' className='navigation-links'>Blog</HashLink>
-                    <HashLink onClick={() => { sandwichDance()}} to='/#second-sectional' className='navigation-links'>Skills</HashLink>
-                    <HashLink onClick={() => { sandwichDance()}} to='/#third-sectional' className='navigation-links'>Projects</HashLink>
+                    <HashLink onClick={() => { sandwichDance()}} to='/#Hobbies' className='navigation-links'>Hobbies</HashLink>
+                    <HashLink onClick={() => { sandwichDance()}} to='/#Projects' className='navigation-links'>Projects</HashLink>
                     <HashLink onClick={() => { sandwichDance()}} to='/#footer-sectional' className='navigation-links'>Contact</HashLink>
                     <Outlet/>
                 </div>

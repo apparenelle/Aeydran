@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Navigation from './components/First/Navigation/Navigation';
+import Navigation from './components/Navigation/Navigation.js';
 import Blog_Item from './Blog_Item';
 
 import './Blog.css';
