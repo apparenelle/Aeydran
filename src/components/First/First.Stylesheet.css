@@ -28,6 +28,14 @@
     100%    {opacity: 1;}
 }
 
+.my-pic{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    
+
+}
 
 .home-container{
     display: flex;
@@ -55,9 +63,6 @@
     }
 }
 
-.meet-me {
-    width: 100%;
-}
 
 .three-d-container{
     position: relative;
@@ -78,7 +83,8 @@ canvas {
 }
 
 .greetings-flex{
-    flex: 4 6;
+    /* flex: 4 6; */
+    width: 400px;
     /* padding: 10px 50px; */
     text-align: center;
 }

@@ -3,6 +3,7 @@ import Navigation from '../Navigation/Navigation.js';
 import TechStack from './TechStack.js';
 import ThreeD from '../../ThreeD.js';
 import './First.Stylesheet.css';
+import snow from "../../assets/snow.jpg"
 
 function First({isMobile}) {
     // let isMobile = props.isMobile;
@@ -47,16 +48,13 @@ function First({isMobile}) {
 
     return (
         <section className='sectional flex-column aitems-center jcontent-center color-white'>
-            <div className= {`meet-me flex-grow-1 ${isMobile ? 'flex-column aitems-center':'flex-row'} `}>
-                <div className='three-d-container'>
-                    <ThreeD nScale={isMobile ? 1.2 : 1.3} />
-                </div>
-                <div className={`greetings-flex flex-column  jcontent-center${isMobile ? '' : ''}`}>
+            <div className= {`jcontent-space-around ${isMobile ? 'flex-column aitems-center':'flex-row aitems-center'} `}>
+                    <img src={snow} alt="picture of creator" class="my-pic"/>
+                <div className={`greetings-flex flex-column  jcontent-center ${isMobile ? '' : ''}`}>
                     <div className=''>
                         <h1>Adrian</h1>
-                        <p className='white font-small'>Jack of All Trades,</p>
                         <p className='white font-small'>Master of The Universe</p>
-                        <p className='white font-small'>The More You Know (x2)</p>
+                        
                         <br/>
                         <p className='flex-row jcontent-center'>
                             <span className="dont-wrap-text">{typedText}</span>
