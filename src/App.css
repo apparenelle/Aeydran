@@ -44,7 +44,7 @@ html, body {
 .sectional{ 
     min-width: 100%;
     min-height: max(50vh, 500px);
-    margin-bottom: 25vh;
+    padding: 15vh 0vh;
 }
 
 .sectional > h2 {

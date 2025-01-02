@@ -3,7 +3,7 @@ import dataAi from './assets/data-ai.png';
 
 import bayernlbJobLogo from './assets/bayernlb2.jpg';
 import nysJobLogo from './assets/nys.png';
-import anaDataJobLogo from './assets/anadata.jpeg';
+import anaDataJobLogo from './assets/ana-data-2.png';
 import sculptorJobLogo from './assets/sculptor.png';
 
 // =========================================================================================================================================

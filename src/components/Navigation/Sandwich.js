@@ -58,7 +58,7 @@ function openMobileNav(){
     document.getElementById("myNav").style.width = "100vw";
     document.getElementById("root").style.transition = "0.3s";
     document.body.style.overflow = 'hidden';
-    console.log("nav was opened");
+    // console.log("nav was opened");
 }
 
 function closeMobileNav(){

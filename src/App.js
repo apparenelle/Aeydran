@@ -6,7 +6,7 @@ import First from './components/First/First.js';
 import ListwithImg from './components/Generic-Components/ListwithImg.js';
 // import Fourth from './components/Experiences/Fourth.js';
 import Footer from './components/Contact-Me/Footer.js';
-import Loading from './Loading.js';
+// import Loading from './Loading.js';
 import Blog from './Blog.js';
 
 import { hobbiesArr, projectsArr, experienceArr } from './Data.js';
@@ -36,22 +36,18 @@ function App() {
       windowWidth = window.innerWidth;
       { windowWidth<mobileWidth ? (isMobile=true) : (isMobile=false) }
       
-      console.log(`Window width is ${windowWidth}px. Are we in mobile mode: ${isMobile}.`); 
+      // console.log(`Window width is ${windowWidth}px. Are we in mobile mode: ${isMobile}.`); 
       setIsMobile(isMobile);
     });
   }, [windowWidth, isMobile]);
-
-
-
- 
   
-  const experiencesArr = [
-    {
-      imgSrc: '',
-      title: '',
-      description: "",
-    },
-  ];
+  // const experiencesArr = [
+  //   {
+  //     imgSrc: '',
+  //     title: '',
+  //     description: "",
+  //   },
+  // ];
   
   return ( 
       <BrowserRouter >
@@ -59,7 +55,6 @@ function App() {
         <Routes>
           <Route path='/' element={
             <>
-              <Loading />
               <div className={`App flex-column aitems-center color-white`}  id='app'>
                 <Navigation isMobile={isMobile} />
                 <First id={'home'} isMobile={mobileState}/>

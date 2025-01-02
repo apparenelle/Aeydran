@@ -3,7 +3,7 @@ import Navigation from '../Navigation/Navigation.js';
 import TechStack from './TechStack.js';
 import ThreeD from '../../ThreeD.js';
 import './First.Stylesheet.css';
-import snow from "../../assets/snow.jpg"
+import me from "../../assets/adrian-3.jpg"
 
 function First({isMobile}) {
     // let isMobile = props.isMobile;
@@ -49,10 +49,11 @@ function First({isMobile}) {
     return (
         <section className='sectional flex-column aitems-center jcontent-center color-white'>
             <div className= {`jcontent-space-around ${isMobile ? 'flex-column aitems-center':'flex-row aitems-center'} `}>
-                    <img src={snow} alt="picture of creator" class="my-pic"/>
+                    <img src={me} alt="picture of creator" className="my-pic"/>
                 <div className={`greetings-flex flex-column  jcontent-center ${isMobile ? '' : ''}`}>
                     <div className=''>
-                        <h1>Adrian</h1>
+                        <br/>
+                        <h1>Adrian Francis</h1>
                         <p className='white font-small'>Master of The Universe</p>
                         
                         <br/>
