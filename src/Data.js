@@ -1,3 +1,4 @@
+import bonfire from './assets/bonfire.jpg'
 import tradingAI from './assets/crypto-trading.jpg';
 import dataAi from './assets/data-ai.png';
 
@@ -5,6 +6,7 @@ import bayernlbJobLogo from './assets/bayernlb2.jpg';
 import nysJobLogo from './assets/nys.png';
 import anaDataJobLogo from './assets/ana-data-2.png';
 import sculptorJobLogo from './assets/sculptor.png';
+import { Link } from 'react-router-dom';
 
 // =========================================================================================================================================
 export const hobbiesArr = [
@@ -42,6 +44,13 @@ export const hobbiesArr = [
 // =========================================================================================================================================
 
 export const projectsArr = [
+    {
+      imgSrc: bonfire,
+      title: "Bonfire - Dating App",
+      description: ["An astrology based dating app built in React/JS and powered by Google's Firebase for user authentification and data persistance. The app allows you to match, chat, and in the future host video calls. It also supports IP tracking, Check it out at ", <Link to={'https://www.meetatbonfire.com/'}>meetatbinfire.com/</Link>,
+     ]
+
+    },
     {
       imgSrc: tradingAI,
       title: 'Crypto Trading API',

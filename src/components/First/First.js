@@ -51,7 +51,7 @@ function First({isMobile}) {
             <div className= {`jcontent-space-around ${isMobile ? 'flex-column aitems-center':'flex-row aitems-center'} `}>
                     <img src={me} alt="picture of creator" className="my-pic"/>
                 <div className={`greetings-flex flex-column  jcontent-center ${isMobile ? '' : ''}`}>
-                    <div className=''>
+                    <div>
                         <br/>
                         <h1>Adrian Francis</h1>
                         <p className='white font-small'>Master of The Universe</p>
