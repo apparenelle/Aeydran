@@ -1,18 +1,16 @@
 import './Navigation.Stylesheet.css';
-
 import { React, useState } from 'react';
-
-import { Outlet, Link } from 'react-router-dom';
+import { Outlet, } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
 
-export function Sandwich(props) {
-    let [mobileNavIsOpen, setMobileNavState] = useState(false);
+export function Sandwich() {
+    const [mobileNavIsOpen, setMobileNavState] = useState(false);
 
 
     function sandwichDance() {
-        let x = document.getElementById("mobile-sandwich");
-        let y = document.getElementById("app");
+        const x = document.getElementById("mobile-sandwich");
+        const y = document.getElementById("app");
         
         if (typeof x !== "undefined") {
             if (mobileNavIsOpen!==true) {
@@ -52,13 +50,11 @@ export function Sandwich(props) {
 }
 
 
-
-
 function openMobileNav(){
     document.getElementById("myNav").style.width = "100vw";
     document.getElementById("root").style.transition = "0.3s";
     document.body.style.overflow = 'hidden';
-    console.log("nav was opened");
+    // console.log("nav was opened");
 }
 
 function closeMobileNav(){
