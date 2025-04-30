@@ -47,7 +47,7 @@ export const projectsArr = [
     {
       imgSrc: bonfire,
       title: "Bonfire - Dating App",
-      description: ["An astrology based dating app built in React/JS and powered by Google's Firebase for user authentification and data persistance. The app allows you to match, chat, and in the future host video calls. It also supports IP tracking, Check it out at ", <Link to={'https://www.meetatbonfire.com/'}>meetatbinfire.com/</Link>,
+      description: ["An astrology based dating app built in React/JS and powered by Google's Firebase for user authentification and data persistance. The app allows you to match, chat, and in the future host video calls. It also supports IP tracking, Check it out ", <Link to={'https://www.meetatbonfire.com/'}>here</Link>,".",
      ]
 
     },
